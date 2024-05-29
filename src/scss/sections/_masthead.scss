@@ -12,8 +12,7 @@ header.masthead {
     background: linear-gradient(to bottom,
         #{fade-out($brown, 0.2)} 0%,
         #{fade-out($brown, 0.2)} 100%),
-    url("../assets/img/bg-masthead.webp");
-
+        url("../assets/img/bg-masthead_576w.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -23,11 +22,31 @@ header.masthead {
         font-size: 2.25rem;
     }
 
+    @include media-breakpoint-up(md) {
+        background: linear-gradient(to bottom,
+        #{fade-out($brown, 0.2)} 0%,
+        #{fade-out($brown, 0.2)} 100%),
+        url("../assets/img/bg-masthead_768w.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        }
+
     @include media-breakpoint-up(lg) {
         height: 100vh;
         min-height: 40rem;
         padding-top: $navbar-height;
         padding-bottom: 0;
+
+        background: linear-gradient(to bottom,
+        #{fade-out($brown, 0.2)} 0%,
+        #{fade-out($brown, 0.2)} 100%),
+        url("../assets/img/bg-masthead_992w.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
 
         p {
             font-size: 1.15rem;
@@ -39,8 +58,28 @@ header.masthead {
     }
 
     @include media-breakpoint-up(xl) {
+        background: linear-gradient(to bottom,
+        #{fade-out($brown, 0.2)} 0%,
+        #{fade-out($brown, 0.2)} 100%),
+        url("../assets/img/bg-masthead_1200w.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+
         h1 {
             font-size: 3.5rem;
         }
     }
+
+    @include media-breakpoint-up(xxl) {
+        background: linear-gradient(to bottom,
+        #{fade-out($brown, 0.2)} 0%,
+        #{fade-out($brown, 0.2)} 100%),
+        url("../assets/img/bg-masthead_1400w.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        }
 }

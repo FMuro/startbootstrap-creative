@@ -4,9 +4,13 @@
 
 ## Preview
 
-[![Creative Preview](https://assets.startbootstrap.com/img/screenshots/themes/creative.png)](https://startbootstrap.github.io/startbootstrap-creative/)
+[![Creative Preview](https://assets.startbootstrap.com/img/screenshots/themes/creative.png)](https://fmuro.github.io/startbootstrap-creative/)
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-creative/)**
+**[View Live Preview](https://fmuro.github.io/startbootstrap-creative/)**
+
+## Improved performance
+
+![Improved performance](performance.png)
 
 ## Status
 

@@ -10866,6 +10866,22 @@ body {
   border-radius: 10rem;
 }
 
+.btn-sm.button-wrapper, .btn-group-sm > .button-wrapper.btn {
+  margin-bottom: 4px;
+}
+
+.card {
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+  padding: 25px;
+  min-width: 300px;
+}
+
+.card .card-body {
+  padding: 25px;
+  width: 100%;
+}
+
 hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;

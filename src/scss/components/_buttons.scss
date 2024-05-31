@@ -12,3 +12,20 @@
     border: none;
     border-radius: 10rem;
 }
+
+.btn-sm.button-wrapper {
+    margin-bottom:4px;
+}
+
+.card {
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 25px;
+    min-width: 300px;
+}
+
+.card .card-body {
+    padding: 25px;
+    width: 100%;
+}

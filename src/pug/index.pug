@@ -92,6 +92,105 @@ html(lang='en')
                             h3.h4.mb-2 Made with Love
                             p.text-muted.mb-0 Is it really open source if it's not made with love?
 
+        // Cards
+        section#cards.page-section
+            .container.px-4.px-lg-5
+                h2.text-center.mt-0 Some slides
+                hr.divider
+            .carousel.carousel-dark.slide#carouselExampleControls(data-bs-ride="carousel")
+                .carousel-inner
+                    .carousel-item.active
+                        .card-wrapper.container-sm.d-flex.justify-content-around
+                            .card.shadow.mx-5.rounded
+                                .card-body
+                                    h6.card-title Card pre-title
+                                    h5.card-title Card title    
+                                    p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    a.btn.btn-outline-primary.btn-sm.button-wrapper Go somewhere
+                                    a.btn.btn-outline-secondary.btn-sm.button-wrapper Or elsewhere
+                                    a.btn.btn-outline-success.btn-sm.button-wrapper Who knows
+                    .carousel-item
+                        .card-wrapper.container-sm.d-flex.justify-content-around
+                            .card.shadow.mx-5.rounded
+                                .card-body
+                                    h6.card-title 2nd Card pre-title
+                                    h5.card-title Card title
+                                    p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                                    a.btn.btn-outline-primary.btn-sm.button-wrapper Go somewhere
+                                    a.btn.btn-outline-secondary.btn-sm.button-wrapper Or elsewhere
+                                    a.btn.btn-outline-success.btn-sm.button-wrapper Who knows
+                button.carousel-control-prev(data-bs-target="#carouselExampleControls", type="button", data-bs-slide="prev")
+                    .carousel-control-prev-icon(aria-hidden="true")
+                    .visually-hidden Previous
+                button.carousel-control-next(data-bs-target="#carouselExampleControls", type="button", data-bs-slide="next")
+                    .carousel-control-next-icon(aria-hidden="true")
+                    .visually-hidden Next
+            .container-fluid.py-2
+                h2.font-weight-light Bootstrap 5 Horizontal Scrolling Cards with Flexbox
+                .d-flex.flex-row.flex-nowrap.overflow-auto
+                    .card.shadow.mx-5.rounded
+                        .card-body
+                            h6.card-title Card pre-title
+                            h5.card-title Card title 1
+                            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                            a.btn.btn-outline-primary.btn-sm.button-wrapper Go somewhere
+                            a.btn.btn-outline-secondary.btn-sm.button-wrapper Or elsewhere
+                            a.btn.btn-outline-success.btn-sm.button-wrapper Who knows
+                    .card.shadow.mx-5.rounded
+                        .card-body
+                            h6.card-title Card pre-title
+                            h5.card-title Card title 2
+                            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                            a.btn.btn-outline-primary.btn-sm.button-wrapper Go somewhere
+                            a.btn.btn-outline-secondary.btn-sm.button-wrapper Or elsewhere
+                            a.btn.btn-outline-success.btn-sm.button-wrapper Who knows
+                    .card.shadow.mx-5.rounded
+                        .card-body
+                            h6.card-title Card pre-title
+                            h5.card-title Card title 3
+                            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                            a.btn.btn-outline-primary.btn-sm.button-wrapper Go somewhere
+                            a.btn.btn-outline-secondary.btn-sm.button-wrapper Or elsewhere
+                            a.btn.btn-outline-success.btn-sm.button-wrapper Who knows
+                    .card.shadow.mx-5.rounded
+                        .card-body
+                            h6.card-title Card pre-title
+                            h5.card-title Card title 4
+                            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                            a.btn.btn-outline-primary.btn-sm.button-wrapper Go somewhere
+                            a.btn.btn-outline-secondary.btn-sm.button-wrapper Or elsewhere
+                            a.btn.btn-outline-success.btn-sm.button-wrapper Who knows
+                    .card.shadow.mx-5.rounded
+                        .card-body
+                            h6.card-title Card pre-title
+                            h5.card-title Card title 5
+                            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                            a.btn.btn-outline-primary.btn-sm.button-wrapper Go somewhere
+                            a.btn.btn-outline-secondary.btn-sm.button-wrapper Or elsewhere
+                            a.btn.btn-outline-success.btn-sm.button-wrapper Who knows
+                    .card.shadow.mx-5.rounded
+                        .card-body
+                            h6.card-title Card pre-title
+                            h5.card-title Card title 6
+                            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+                            a.btn.btn-outline-primary.btn-sm.button-wrapper Go somewhere
+                            a.btn.btn-outline-secondary.btn-sm.button-wrapper Or elsewhere
+                            a.btn.btn-outline-success.btn-sm.button-wrapper Who knows
+
+        // Dark cards
+        section#darkcards.page-section.bg-dark.text-white
+            .container.px-4.px-lg-5
+                h2.text-center.mt-0 Some dark cards
+                hr.divider.divider-light
+                .card.shadow.mx-5.bg-secondary.bg-gradient.text-white.rounded
+                    .card-body
+                        h6.card-title Card pre-title
+                        h5.card-title Card title
+                        p.card-text Some quick example text to build on the card title and make up the bulk of the card's content
+                        a.btn.btn-primary.btn-sm.button-wrapper Go somewhere
+                        a.btn.btn-dark.btn-sm.button-wrapper Or elsewhere
+                        a.btn.btn-success.btn-sm.button-wrapper Who knows
+
         // Portfolio
         #portfolio
             .container-fluid.p-0

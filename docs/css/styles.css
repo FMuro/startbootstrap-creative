@@ -10882,6 +10882,28 @@ body {
   width: 100%;
 }
 
+.card .card-olverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  transition: opacity 0.2s ease;
+  text-align: center;
+}
+.card:hover .card-olverlay {
+  opacity: 1;
+}
+
 hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
@@ -10954,6 +10976,52 @@ hr.divider-light {
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
     color: #f4623a;
+  }
+}
+
+#specialNav {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+#specialNav .navbar-brand {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #212529;
+}
+#specialNav .navbar-nav .nav-item .nav-link {
+  color: #6c757d;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
+}
+#specialNav .navbar-nav .nav-item .nav-link:hover, #specialNav .navbar-nav .nav-item .nav-link:active {
+  color: #f4623a;
+}
+#specialNav .navbar-nav .nav-item .nav-link.active {
+  color: #f4623a !important;
+}
+@media (min-width: 992px) {
+  #specialNav {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+  #specialNav .navbar-brand {
+    color: #212529;
+  }
+  #specialNav .navbar-brand:hover {
+    color: #f4623a;
+  }
+  #specialNav .navbar-nav .nav-item .nav-link {
+    color: #212529;
+    padding: 0 1rem;
+  }
+  #specialNav .navbar-nav .nav-item .nav-link:hover {
+    color: #f4623a;
+  }
+  #specialNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
   }
 }
 

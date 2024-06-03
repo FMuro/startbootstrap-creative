@@ -22,8 +22,8 @@ html(lang='en')
     body#page-top
 
         // Cards
-        section#cards.page-section
-            nav#lightNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
+        section#cards.page-section.bg-dark.text-white
+            nav#darkNav.navbar.navbar-expand-lg.navbar-dark.fixed-top.py-3
                 .container.px-4.px-lg-5
                     a.navbar-brand(href='#page-top') Start Bootstrap
                     button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
@@ -44,42 +44,42 @@ html(lang='en')
                 h5.text-center Some text
                 .row.row-cols-1.row-cols-md-2.row-cols-xxl-4.gx-5.gy-4.my-4
                     .col
-                        .card.shadow.rounded
+                        .card.bg-dark.shadow.rounded
                             .card-body
                                 h6.card-title Card pre-title
                                 h5.card-title Card title 1
                                 p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-                            .card-olverlay
+                            .card-olverlay.bg-dark(style="--bs-bg-opacity: .8;")
                                 a.btn.btn-primary.btn-sm.button-wrapper Go somewhere
                                 a.btn.btn-secondary.btn-sm.button-wrapper Or elsewhere
                                 a.btn.btn-success.btn-sm.button-wrapper Who knows
                     .col
-                        .card.shadow.rounded
+                        .card.bg-dark.shadow.rounded
                             .card-body
                                 h6.card-title Card pre-title
                                 h5.card-title Card title 2
                                 p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-                            .card-olverlay
+                            .card-olverlay.bg-dark(style="--bs-bg-opacity: .8;")
                                 a.btn.btn-primary.btn-sm.button-wrapper Go somewhere
                                 a.btn.btn-secondary.btn-sm.button-wrapper Or elsewhere
                                 a.btn.btn-success.btn-sm.button-wrapper Who knows
                     .col
-                        .card.shadow.rounded
+                        .card.bg-dark.shadow.rounded
                             .card-body
                                 h6.card-title Card pre-title
                                 h5.card-title Card title 3
                                 p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-                            .card-olverlay
+                            .card-olverlay.bg-dark(style="--bs-bg-opacity: .8;")
                                 a.btn.btn-primary.btn-sm.button-wrapper Go somewhere
                                 a.btn.btn-secondary.btn-sm.button-wrapper Or elsewhere
                                 a.btn.btn-success.btn-sm.button-wrapper Who knows
                     .col
-                        .card.shadow.rounded
+                        .card.bg-dark.shadow.rounded
                             .card-body
                                 h6.card-title Card pre-title
                                 h5.card-title Card title 4
                                 p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-                            .card-olverlay
+                            .card-olverlay.bg-dark(style="--bs-bg-opacity: .8;")
                                 a.btn.btn-primary.btn-sm.button-wrapper Go somewhere
                                 a.btn.btn-secondary.btn-sm.button-wrapper Or elsewhere
                                 a.btn.btn-success.btn-sm.button-wrapper Who knows
@@ -87,7 +87,7 @@ html(lang='en')
                     a.btn.btn-primary.btn-xl(href='#services') See more
 
         // Footer
-        footer.bg-light.py-5
+        footer.bg-dark.py-5
             .container.px-4.px-lg-5
                 .small.text-center.text-muted
                     | Copyright &copy; 2023 - Company Name

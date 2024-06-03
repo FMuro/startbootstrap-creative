@@ -10870,40 +10870,6 @@ body {
   margin-bottom: 4px;
 }
 
-.card {
-  margin-bottom: 30px;
-  transition: all 0.3s ease-in-out;
-  padding: 25px;
-  min-width: 300px;
-}
-
-.card .card-body {
-  padding: 25px;
-  width: 100%;
-}
-
-.card .card-olverlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 10rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  opacity: 0;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.8);
-  transition: opacity 0.2s ease;
-  text-align: center;
-}
-.card:hover .card-olverlay {
-  opacity: 1;
-}
-
 hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
@@ -10979,48 +10945,94 @@ hr.divider-light {
   }
 }
 
-#specialNav {
+#lightNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
   transition: background-color 0.2s ease;
 }
-#specialNav .navbar-brand {
+#lightNav .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #212529;
 }
-#specialNav .navbar-nav .nav-item .nav-link {
+#lightNav .navbar-nav .nav-item .nav-link {
   color: #6c757d;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   font-size: 0.9rem;
   padding: 0.75rem 0;
 }
-#specialNav .navbar-nav .nav-item .nav-link:hover, #specialNav .navbar-nav .nav-item .nav-link:active {
+#lightNav .navbar-nav .nav-item .nav-link:hover, #lightNav .navbar-nav .nav-item .nav-link:active {
   color: #f4623a;
 }
-#specialNav .navbar-nav .nav-item .nav-link.active {
+#lightNav .navbar-nav .nav-item .nav-link.active {
   color: #f4623a !important;
 }
 @media (min-width: 992px) {
-  #specialNav {
+  #lightNav {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     background-color: #fff;
   }
-  #specialNav .navbar-brand {
+  #lightNav .navbar-brand {
     color: #212529;
   }
-  #specialNav .navbar-brand:hover {
+  #lightNav .navbar-brand:hover {
     color: #f4623a;
   }
-  #specialNav .navbar-nav .nav-item .nav-link {
+  #lightNav .navbar-nav .nav-item .nav-link {
     color: #212529;
     padding: 0 1rem;
   }
-  #specialNav .navbar-nav .nav-item .nav-link:hover {
+  #lightNav .navbar-nav .nav-item .nav-link:hover {
     color: #f4623a;
   }
-  #specialNav .navbar-nav .nav-item:last-child .nav-link {
+  #lightNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+}
+
+#darkNav {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #212529;
+  transition: background-color 0.2s ease;
+}
+#darkNav .navbar-brand {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #fff;
+}
+#darkNav .navbar-nav .nav-item .nav-link {
+  color: #dee2e6;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
+}
+#darkNav .navbar-nav .nav-item .nav-link:hover, #darkNav .navbar-nav .nav-item .nav-link:active {
+  color: #f4623a;
+}
+#darkNav .navbar-nav .nav-item .nav-link.active {
+  color: #f4623a !important;
+}
+@media (min-width: 992px) {
+  #darkNav {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #212529;
+  }
+  #darkNav .navbar-brand {
+    color: #fff;
+  }
+  #darkNav .navbar-brand:hover {
+    color: #f4623a;
+  }
+  #darkNav .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    padding: 0 1rem;
+  }
+  #darkNav .navbar-nav .nav-item .nav-link:hover {
+    color: #f4623a;
+  }
+  #darkNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
   }
 }
@@ -19248,6 +19260,39 @@ hr.divider-light {
 
 .bi-vignette::before {
   content: "賈";
+}
+
+.card {
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+  padding: 25px;
+  min-width: 300px;
+}
+
+.card .card-body {
+  padding: 25px;
+  width: 100%;
+}
+
+.card .card-olverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.8);
+  transition: opacity 0.2s ease;
+  text-align: center;
+}
+.card:hover .card-olverlay {
+  opacity: 1;
 }
 
 header.masthead {

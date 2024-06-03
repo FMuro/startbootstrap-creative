@@ -17,7 +17,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border-radius: 2rem;
+        border-radius: var(--bs-border-radius);
 
         position: absolute;
         bottom: 0;

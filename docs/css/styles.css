@@ -12086,6 +12086,15 @@ a {
   border-radius: 10rem;
 }
 
+.btn-xs {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
+
 hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;

@@ -1,4 +1,13 @@
+# Landing page icons, they'll appear in this order
 social:
+
+  - name: zbMath
+    icon: icon-zbmath
+    link: https://zbmath.org/authors/?q=ai:muro.fernando
+
+  - name: MathSciNet
+    icon: icon-ams
+    link: https://mathscinet.ams.org/mathscinet/author?authorId=724223
 
   - name: arXiv
     icon: ai-arxiv

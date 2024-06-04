@@ -4,19 +4,19 @@
 
 #mainNav {
     box-shadow: $box-shadow;
-    background-color: $white;
+    background-color: var(--bs-body-bg);
     transition: background-color 0.2s ease;
 
     .navbar-brand {
         font-family: $font-family-sans-serif;
         font-weight: $font-weight-bold;
-        color: $gray-900;
+        color: var(--bs-text-primary);
     }
 
     .navbar-nav {
         .nav-item {
             .nav-link {
-                color: $gray-600;
+                color: var(--bs-text-primary);
                 font-family: $font-family-sans-serif;
                 font-weight: $font-weight-bold;
                 font-size: 0.9rem;
@@ -43,7 +43,7 @@
             color: fade-out($white, 0.3);
 
             &:hover {
-                color: $white;
+                color: $primary;
             }
         }
 
@@ -54,7 +54,7 @@
                     padding: 0 1rem;
 
                     &:hover {
-                        color: $white;
+                        color: $primary;
                     }
                 }
 
@@ -69,10 +69,10 @@
         // Navbar styling applied when the page is scrolled
         &.navbar-shrink {
             box-shadow: $box-shadow;
-            background-color: $white;
+            background-color: var(--bs-body-bg);
 
             .navbar-brand {
-                color: $gray-900;
+                color: var(--bs-text-primary);
 
                 &:hover {
                     color: $primary;
@@ -82,7 +82,7 @@
             .navbar-nav {
                 .nav-item {
                     .nav-link {
-                        color: $gray-900;
+                        color: var(--bs-text-primary);
 
                         &:hover {
                             color: $primary;

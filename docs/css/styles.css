@@ -12057,6 +12057,15 @@ body {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
+a {
+  color: #f4623a;
+  text-decoration: none;
+}
+a:hover {
+  color: #cf5331;
+  text-decoration: none;
+}
+
 .btn-xl {
   padding: 1.25rem 2.25rem;
   font-size: 0.85rem;

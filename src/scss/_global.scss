@@ -26,3 +26,13 @@ body {
 .text-white-75 {
     color: fade-out($white, 0.25) !important;
 }
+
+a {
+    color: $primary;
+    text-decoration: none;
+
+    &:hover {
+        color: #cf5331;
+        text-decoration: none;
+    }
+}

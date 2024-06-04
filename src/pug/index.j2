@@ -109,54 +109,16 @@ html(lang='en')
         #portfolio.bg-dark
             .container-fluid.p-0
                 .row.g-0
+                    {% for event in portfolio %}
                     .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/1.webp', width='650', height='350', title='Project Name')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/1.webp', width='650', height='350', alt='...')
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/{{ event.image }}.webp', width='1300', height='700', title='{{ event.name }}')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/{{ event.image }}.webp', width='650', height='350', alt='...')
                             .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Category
+                                    | {{ event.category }}
                                 .project-name
-                                    | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/2.webp', width='650', height='350', title='Project Name')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/2.webp', width='650', height='350', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/3.webp', width='650', height='350', title='Project Name')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/3.webp', width='650', height='350', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/4.webp', width='650', height='350', title='Project Name')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/4.webp', width='650', height='350', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/5.webp', width='650', height='350', title='Project Name')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/5.webp', width='650', height='350', alt='...')
-                            .portfolio-box-caption
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
-                    .col-lg-4.col-sm-6
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/6.webp', width='650', height='350', title='Project Name')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/6.webp', width='650', height='350', alt='...')
-                            .portfolio-box-caption.p-3
-                                .project-category.text-white-50
-                                    | Category
-                                .project-name
-                                    | Project Name
+                                    | {{ event.name }}
+                    {% endfor %}
 
         // Call to action
         section.page-section.bg-dark.text-white.border-bottom.border-top.border-primary.border-3

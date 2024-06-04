@@ -36,3 +36,33 @@ social:
   - name: Zotero
     icon: ai-zotero
     link: https://www.zotero.org/fmuro
+
+
+# Portfolio pictures, they'll appear in this order
+# place 650x350 jpg images in src/assets/img/portfolio/thumbnails
+# place 1300x700 jpg images in src/assets/img/portfolio/fullsize
+portfolio:
+
+  - name: Categorical Groups, Barcelona, 2008
+    category: Workshop
+    image: barcelona
+  
+  - name: Triangulated Categories and Applications, Banff, 2016
+    category: Workshop
+    image: banff2016triang
+
+  - name: Operations in Highly Structured Homology Theories, Banff, 2016
+    category: Workshop
+    image: banff2016operations
+
+  - name: Triangulated Categories in Representation Theory and Beyond, Ålesund, 2022
+    category: Conference
+    image: aalesund
+
+  - name: Algebraic Topology, in memory of Hans-Joachim Baues, Bonn, 2022
+    category: Conference
+    image: bonn2022
+
+  - name: Hochschil (Co)Homology and Applications, Oberwolfach, 2024
+    category: Workshop
+    image: oberwolfach

@@ -55,21 +55,9 @@ html(lang='en')
                         p.text-white-75.mb-5
                             | Welcome to my website! I'm a professor of mathematics at the University of Seville. Here, you'll mostly find information about my research.
                         p.mb-5
-                        
-                            a.ai.ai-arxiv.ai-3x.mx-2.professional-icons(href="https://arxiv.org/a/muro_f_1", title="arXiv")
-                        
-                            a.ai.ai-mathoverflow.ai-3x.mx-2.professional-icons(href="https://mathoverflow.net/users/12166/fernando-muro", title="MathOverflow")
-                        
-                            a.ai.ai-orcid.ai-3x.mx-2.professional-icons(href="https://orcid.org/0000-0001-8457-9889", title="ORCID")
-                        
-                            a.ai.ai-clarivate.ai-3x.mx-2.professional-icons(href="http://www.webofscience.com/wos/author/record/I-5790-2015", title="Web of Science")
-                        
-                            a.ai.ai-scopus.ai-3x.mx-2.professional-icons(href="https://www.scopus.com/authid/detail.uri?authorId=22135559400", title="Scopus")
-                        
-                            a.ai.ai-zotero.ai-3x.mx-2.professional-icons(href="https://www.zotero.org/fmuro", title="Zotero")
-                        
-                            a.ai.ai-google-scholar.ai-3x.mx-2.professional-icons(href="https://scholar.google.com/citations?user=Jh0JG3wAAAAJ", title="Google Scholar")
-                        
+                        {% for network in social %}
+                            a.ai.{{ network.icon }}.ai-3x.mx-2.professional-icons(href="{{ network.link }}", title="{{ network.name }}")
+                        {% endfor %}
                         a.btn.btn-primary.btn-xl(href='#about') Find Out More
 
         // About

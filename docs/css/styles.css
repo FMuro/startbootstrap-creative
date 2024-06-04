@@ -12066,6 +12066,16 @@ a:hover {
   text-decoration: none;
 }
 
+.professional-icons {
+  color: rgba(255, 255, 255, 0.75) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.professional-icons:hover {
+  color: #fff !important;
+  transform: scale(1.25);
+}
+
 .btn-xl {
   padding: 1.25rem 2.25rem;
   font-size: 0.85rem;

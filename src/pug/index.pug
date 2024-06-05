@@ -84,31 +84,9 @@ html(lang='en')
                 hr.divider
                 p.text-muted.mb-3.mx-5.text-center
                     | I work on algebraic topology, specifically on homotopy theory, and I also interact with related fields such as category theory, homological algebra, K-theory, and representation theory.
-                .row.gx-4.gx-lg-5
-                    .col-lg-3.col-md-6.text-center
-                        .mt-5
-                            .mb-2
-                                i.bi-gem.fs-1.text-primary
-                            h3.h4.mb-2 Sturdy Themes
-                            p.text-muted.mb-0 Our themes are updated regularly to keep them bug free!
-                    .col-lg-3.col-md-6.text-center
-                        .mt-5
-                            .mb-2
-                                i.bi-laptop.fs-1.text-primary
-                            h3.h4.mb-2 Up to Date
-                            p.text-muted.mb-0 All dependencies are kept current to keep things fresh.
-                    .col-lg-3.col-md-6.text-center
-                        .mt-5
-                            .mb-2
-                                i.bi-globe.fs-1.text-primary
-                            h3.h4.mb-2 Ready to Publish
-                            p.text-muted.mb-0 You can use this design as is, or you can make changes!
-                    .col-lg-3.col-md-6.text-center
-                        .mt-5
-                            .mb-2
-                                i.bi-heart.fs-1.text-primary
-                            h3.h4.mb-2 Made with Love
-                            p.text-muted.mb-0 Is it really open source if it's not made with love?
+                h3.col-lg-12.text-left Papers
+                ol(reversed)
+                    include papers.pug
 
         // Portfolio
         #portfolio.bg-dark
@@ -193,7 +171,7 @@ html(lang='en')
                     .col-lg-3.col-md-4.text-center
                         .mt-3
                             .mb-2
-                                i.bi-building.fs-1.text-primary
+                                i.bi-postcard.fs-1.text-primary
                             h4.mb-2 Send me a letter
                             p.text-muted.mb-0
                             a(href="https://www.us.es") Universidad de Sevilla<br>
@@ -208,10 +186,10 @@ html(lang='en')
                 .small.text-center.text-muted
                     | Copyright &copy; 2024 - 
                     a(href="#page-top") Fernando Muro
-                    |. Powered by
-                    a(href='https://startbootstrap.com') Start Bootstrap
-                    | with
-                    a(href='https://startbootstrap.com/theme/creative') Creative
+                    |. Powered by 
+                    a(href='https://startbootstrap.com') Start Bootstrap 
+                    | with 
+                    a(href='https://startbootstrap.com/theme/creative') Creative 
                     | theme.
 
         // Bootstrap core JS

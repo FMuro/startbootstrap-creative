@@ -12066,6 +12066,14 @@ a:hover {
   text-decoration: none;
 }
 
+.paper-link {
+  padding: 0 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .professional-icons {
   color: rgba(255, 255, 255, 0.75) !important;
   transition: all 0.2s ease-in-out;

@@ -8,6 +8,20 @@ ol(reversed)
 {% if vars.update({'foo': True}) %} {% endif %}
     li 
         | {% for name in paper.author %}{% if loop.index > 1 %}{% if loop.last %} and {% else %}, {% endif %}{% endif %}{{ name.given }} {{ name.family }}{% if loop.last %}, {% endif %}{% endfor %}#[strong {{ paper.title }}], {% if paper.issued %} {% if paper.toappear %}to appear in{% endif %} {% if paper.type == 'article-journal' %}#[i {{ paper['container-title'] }}]{% endif %}{% if paper.toappear %},{% endif %} {% if paper.page %} {% if paper.type == 'chapter' %}#[i {{ paper['container-title'] }}], {% endif %}{% if paper.series %}{{ paper.series }},{% endif %} {{ paper.volume }}{% endif %} {% if paper.conference %}#[i {{ paper.conference }}], {% if paper.note %}{{ paper.note }},{% endif %} {% endif %} {% if paper.seminar %}#[i {{ paper.seminar }}], {% endif %} {% if paper.month %}{{ paper.month }}{% endif %} {% if paper.page %}{% if paper.type == 'article-journal' %}({% endif %}{% endif %}{{ paper.issued['date-parts'][0][0] }}{% if paper.page %}{% if paper.type == 'article-journal' %}){% endif %}{% if paper.number %} no. {{ paper.number }}{% endif %}, {% if paper.page %}{{ paper.page }}{% endif %}{% endif %}{% endif %}{% if paper.conference %}, {{ paper.address }}{% endif %}{% if paper.seminar %}, {{ paper.address }}{% endif %}. 
+        {% if paper.abstract -%}
+        a.paper-link(type="button", data-bs-toggle="modal", data-bs-target="#abstract{{ paper.id }}") Abstract
+
+        // Modal
+        .modal.fade(id="abstract{{ paper.id }}", tabindex="-1", role="dialog", aria-labelledby="{{ paper.title }}", aria-hidden="true")
+            .modal-dialog(role="document").modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5.modal-title(id="abstract{{ paper.id }}") {{ paper.title }}
+                    .modal-body
+                        p {{ paper.abstract }}
+                    .modal-footer
+                        button.btn.btn-primary(type="button", data-bs-dismiss="modal") Close
+        {% endif -%}
         {% if paper.DOI -%}
             a.paper-link(href="https://doi.org/{{ paper.DOI }}") publisher
         {% endif -%}
@@ -16,6 +30,19 @@ ol(reversed)
         {% endif -%}
         {% if paper['zbmath_url'] -%}
             a.paper-link(href="{{ paper['zbmath_url'] }}") zbMath
+        {% endif -%}
+        {% if paper.bibtex -%}
+        a.paper-link(type="button", data-bs-toggle="modal", data-bs-target="#bibtex{{ paper.id }}") BibTeX
+
+        // Modal
+        .modal.fade(id="bibtex{{ paper.id }}", tabindex="-1", role="dialog", aria-labelledby="{{ paper.title }}", aria-hidden="true")
+            .modal-dialog(role="document").modal-dialog-centered
+                .modal-content
+                    .modal-body
+                        p(id="bibtex{{ paper.id }}") 
+                            code {{ paper.bibtex.replace('\n', '<br>&nbsp;&nbsp;&nbsp;&nbsp;') }}
+                    .modal-footer
+                        button.btn.btn-primary(type="button", data-bs-dismiss="modal") Close
         {% endif -%}
 {% endif -%}
 {% endfor %}
@@ -26,6 +53,20 @@ ol(reversed)
         {% if paper.type != '' %}
         li 
             | {% for name in paper.author %}{% if loop.index > 1 %}{% if loop.last %} and {% else %}, {% endif %}{% endif %}{{ name.given }} {{ name.family }}{% if loop.last %}, {% endif %}{% endfor %}#[strong {{ paper.title }}], {% if paper.issued %} {% if paper.toappear %}to appear in{% endif %} {% if paper.type == 'article-journal' %}#[i {{ paper['container-title'] }}]{% endif %}{% if paper.toappear %},{% endif %} {% if paper.page %} {% if paper.type == 'chapter' %}#[i {{ paper['container-title'] }}], {% endif %}{% if paper.series %}{{ paper.series }},{% endif %} {{ paper.volume }}{% endif %} {% if paper.conference %}#[i {{ paper.conference }}], {% if paper.note %}{{ paper.note }},{% endif %} {% endif %} {% if paper.seminar %}#[i {{ paper.seminar }}], {% endif %} {% if paper.month %}{{ paper.month }}{% endif %} {% if paper.page %}{% if paper.type == 'article-journal' %}({% endif %}{% endif %}{{ paper.issued['date-parts'][0][0] }}{% if paper.page %}{% if paper.type == 'article-journal' %}){% endif %}{% if paper.number %} no. {{ paper.number }}{% endif %}, {% if paper.page %}{{ paper.page }}{% endif %}{% endif %}{% endif %}{% if paper.conference %}, {{ paper.address }}{% endif %}{% if paper.seminar %}, {{ paper.address }}{% endif %}. 
+            {% if paper.abstract -%}
+            a.paper-link(type="button", data-bs-toggle="modal", data-bs-target="#abstract{{ paper.id }}") Abstract
+
+            // Modal
+            .modal.fade(id="abstract{{ paper.id }}", tabindex="-1", role="dialog", aria-labelledby="{{ paper.title }}", aria-hidden="true")
+                .modal-dialog(role="document").modal-dialog-centered
+                    .modal-content
+                        .modal-header
+                            h5.modal-title(id="abstract{{ paper.id }}") {{ paper.title }}
+                        .modal-body
+                            p {{ paper.abstract }}
+                        .modal-footer
+                            button.btn.btn-primary(type="button", data-bs-dismiss="modal") Close
+            {% endif -%}
             {% if paper.DOI -%}
                 a.paper-link(href="https://doi.org/{{ paper.DOI }}") publisher
             {% endif -%}
@@ -34,6 +75,19 @@ ol(reversed)
             {% endif -%}
             {% if paper['zbmath_url'] -%}
                 a.paper-link(href="{{ paper['zbmath_url'] }}") zbMath
+            {% endif -%}
+            {% if paper.bibtex -%}
+            a.paper-link(type="button", data-bs-toggle="modal", data-bs-target="#bibtex{{ paper.id }}") BibTeX
+
+            // Modal
+            .modal.fade(id="bibtex{{ paper.id }}", tabindex="-1", role="dialog", aria-labelledby="{{ paper.title }}", aria-hidden="true")
+                .modal-dialog(role="document").modal-dialog-centered
+                    .modal-content
+                        .modal-body
+                            p(id="bibtex{{ paper.id }}") 
+                                code {{ paper.bibtex.replace('\n', '<br>&nbsp;&nbsp;&nbsp;&nbsp;') }}
+                        .modal-footer
+                            button.btn.btn-primary(type="button", data-bs-dismiss="modal") Close
             {% endif -%}
         {% endif -%}
         {% endfor %}

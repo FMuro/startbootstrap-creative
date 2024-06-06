@@ -1,0 +1,22 @@
+h3.col-lg-12.my-5.text-left 
+    .bi.bi-easel &nbsp; Presentations
+.row.row-cols-1.row-cols-xl-2.gx-5.gy-4
+    {% for entry in input %}
+    .col
+        .card.shadow.rounded.h-100
+            .card-body
+                | #[strong {{ entry.title }}]<br>
+                | #[i {{ entry.event }}]<br>
+                | {% if entry.note %}{{ entry.note }}<br>{% endif %}
+                | {{ entry.daymonth }} {{ entry.year }}, {{ entry.location }}
+            .card-footer
+                {% if entry.file -%}
+                a.paper-link(href="assets/files/presentations/{{ entry.file }}.pdf") Presentation
+                {% endif -%}
+                {% if entry.video -%}
+                a.paper-link(href="{{ entry.video }}") Video
+                {% endif -%}
+                {% if entry.url -%}
+                a.paper-link(href="{{ entry.url }}") Site
+                {% endif -%}
+    {% endfor %}

@@ -1,0 +1,304 @@
+- location: online seminar
+  daymonth: 28 November
+  type: seminar
+  event: University of Haifa Topology & Geometry Seminar
+  file: Haifa2023
+  title: An application of homotopy theory to singularity theory
+  year: 2023
+
+- location: Barcelona, Spain
+  type: conference
+  event: Operadic Methods in Geometry
+  url: https://geoffroy.horel.org/OMG.html
+  daymonth: 22 November
+  file: Barcelona2023
+  title: Hypercommutative algebras and differential forms
+  year: 2023
+
+- location: Glasgow, UK
+  daymonth: 7 March
+  type: seminar
+  event: Algebraic Geometry Seminar
+  file: glasgow23
+  title: The Donovan-Wemyss conjecture on compound Du Val singularities
+  year: 2023
+
+- location: Pavia, Italy
+  daymonth: 24 February
+  type: seminar
+  event: Seminar of Algebra and Geometry
+  url: https://matematica.unipv.it/events/the-donovan-wemyss-conjecture-on-compound-du-val-singularities-an-application-of-the-triangulated-auslander-iyama-correspondence/?occurrence=2023-02-24
+  file: pavia23
+  title: The Donovan-Wemyss conjecture on compound Du Val singularities
+  year: 2023
+
+- location: Málaga, Spain
+  type: conference
+  event: Operads in Málaga
+  url: https://sites.google.com/view/operadsmalaga/homepage
+  daymonth: 25 January
+  file: malaga23
+  title: Massey products and higher operations
+  year: 2023
+
+- location: online seminar
+  daymonth: 28 November
+  type: seminar
+  event: Séminaire d'Algèbre, Paris
+  url: https://researchseminars.org/talk/paris-algebra-seminar/113/
+  file: parisFernando2
+  title: The triangulated Auslander-Iyama correspondence II
+  year: 2022
+
+- location: online seminar
+  daymonth: 21 November
+  type: seminar
+  event: Séminaire d'Algèbre, Paris
+  url: https://researchseminars.org/talk/paris-algebra-seminar/112/
+  file: parisFernando1
+  title: The triangulated Auslander-Iyama correspondence I
+  year: 2022
+
+- location: Barcelona, Spain
+  type: conference
+  event: Barcelona Conference on Higher Structures
+  url: https://sites.google.com/view/bchs-2021/home
+  daymonth: 14 June
+  file: barcelonahigherstructures
+  title: Uniqueness of models for triangulated categories in representation theory
+  video: https://youtu.be/61o415lhCuQ
+  year: 2022
+
+- location: '&Aring;lesund, Norway'
+  type: conference
+  event: Triangulated categories in representation theory and beyond
+  url: https://wiki.math.ntnu.no/abel2022
+  daymonth: 9 June
+  file: aalesund
+  title: The triangulated Auslander-Iyama correspondence II
+  year: 2022
+
+- location: online seminar
+  daymonth: 24 March
+  type: seminar
+  event: Longitudinal Algebra and Geometry Open ONline Seminar
+  url: https://sites.google.com/view/lagoonwebinar/home
+  file: LAGOON
+  title: Enhanced <i>n</i>-angulated categories
+  video: https://media.ed.ac.uk/media/LAGOONA+Longitudinal+Algebra+and+Geometry+Open+ONline+-++Fernando+Muro/1_6wm3p0d4
+  year: 2022
+
+- location: online seminar
+  daymonth: 1 March
+  type: seminar
+  event: New Directions in Group Theory and Triangulated Categories
+  url: https://sites.google.com/view/ndgttc/home
+  file: newdirections
+  title: Uniqueness of enhancements for Hom-finite triangulated categories with an <i>n</i>-cluster tilting object
+  video: https://www.youtube.com/watch?v=c4czV95XdmU
+  year: 2022
+
+- location: online seminar
+  daymonth: 10 December
+  type: seminar
+  event: FD Seminar Online seminar on representation theory of finite-dimensional algebras
+  url: https://www.fd-seminar.xyz/
+  file: fdseminar
+  title: Finite triangulated categories and DG-enhancements
+  year: 2020
+
+- location: online seminar
+  daymonth: 29 September
+  type: seminar
+  event: University of Haifa Topology & Geometry Seminar
+  url: https://mathematics.haifa.ac.il/?p=1772
+  file: haifa
+  title: Finite triangulated categories
+  year: 2020
+
+- location: Bonn, Germany
+  type: conference
+  event: Higher Homotopy Algebras in Topology
+  url: https://www.mpim-bonn.mpg.de/node/9245
+  daymonth: 9-10 May
+  file: bonn19
+  title: An application of A-infinity obstructions to representation theory
+  year: 2019
+
+- location: Amiens, France
+  type: conference
+  event: Colloque 2016 du GDR 2875, Topologie Algébrique et Applications
+  url: https://indico.math.cnrs.fr/event/1297/
+  daymonth: 12-14 October
+  file: amiens
+  title: Minimal models for operadic algebras over arbitrary rings
+  year: 2016
+
+- location: Leicester, UK
+  type: conference
+  event: 31st Summer Conference on Topology and its Applications
+  url: https://sites.google.com/site/summertopology/home
+  daymonth: 2-5 August
+  file: leicester16
+  title: Uniqueness of A-infinity structures on graded alegbras with rich Hochschild cohomology
+  year: 2016
+
+- location: Banff, Canada
+  type: conference
+  event: Triangulated Categories and Applications
+  url: http://www.birs.ca/events/2016/5-day-workshops/16w5040
+  daymonth: 19-24 June
+  title: Triangulated derivators and their K-theory
+  video: http://www.birs.ca/events/2016/5-day-workshops/16w5040/videos/watch/201606201032-Muro.html
+  year: 2016
+
+- location: Banff, Canada
+  type: conference
+  event: Operations in Highly Structured Homology Theories
+  url: http://www.birs.ca/events/2016/5-day-workshops/16w5108
+  daymonth: 22-27 May
+  file: banffmay16
+  title: Massey products and uniqueness of A-infinity algebra structures
+  video: https://www.birs.ca/events/2016/5-day-workshops/16w5108/videos/watch/201605241531-Muro.html
+  year: 2016
+
+- location: Barcelona, Spain
+  type: conference
+  event: Algebra and Geometry Meeting
+  daymonth: 2-4 December
+  file: bcnAGM
+  title: Moduli spaces of DG-algebras
+  year: 2015
+
+- location: Louvain-la-Neuve, Belgium
+  type: conference
+  event: Workshop in Category Theory and Algebraic Topology
+  url: http://sites.uclouvain.be/ctat2015/
+  daymonth: 10-12 September
+  file: lln
+  title: How many units may an A-infinity algebra have?
+  year: 2015
+
+- location: Stuttgart, Germany
+  type: conference
+  event: Workshop on t-structures and related topics
+  url: http://www.iaz.uni-stuttgart.de/LstAGeoAlg/activities/t-work.t
+  daymonth: 7-9 July
+  file: stuttgart
+  title: K-theory and t-structures
+  year: 2011
+
+- location: Banff, Canada
+  type: conference
+  event: Triangulated categories and applications
+  url: http://www.birs.ca/events/2011/5-day-workshops/11w5009
+  daymonth: 12-17 June
+  file: banff2
+  title: Obstructions to Adams representability
+  year: 2011
+
+- location: Prague, Czech Republic
+  type: conference
+  event: Joint Mathematical Conference CSASC 2010
+  url: http://jcmf.cz/?q=en/node/688
+  daymonth: 22-27 January
+  file: praha
+  title: Representability of cohomology theories
+  year: 2010
+
+- location: Seville, Spain
+  type: conference
+  event: Advanced School on Homotopy Theory and Algebraic Geometry
+  url: http://congreso.us.es/htag09/php/index.php
+  daymonth: 7-12 September
+  file: htag
+  title: Triangulated categories
+  year: 2009
+
+- location: Pontevedra, Spain
+  type: conference
+  event: V Seminar on Categories and Applications
+  url: http://www.usc.es/regaca/seca5/en/index.htm
+  daymonth: 10-12 September
+  file: pontevedra
+  title: On determinants (as functors)
+  year: 2008
+
+- location: Bellaterra, Spain
+  type: conference
+  event: Workshop on Categorical Groups
+  url: http://mat.uab.cat/~kock/crm/hocat/cat-groups/
+  daymonth: 6-20 June
+  note: part of the CRM Research Programme Homotopy Theory and Higher Categories
+  file: catgroups
+  title: Categorical groups in brave new algebra
+  year: 2008
+
+- location: Bonn, Germany
+  type: conference
+  event: Conference on Homology and Homotopy
+  daymonth: 26-28 March
+  note: on the occasion of the retirement of Hans-Joachim Baues
+  file: hans
+  title: When can we enhance a triangulated category?
+  year: 2008
+
+- location: Bellaterra, Spain
+  type: conference
+  event: Workshop on Derived Categories
+  daymonth: 5-14 November
+  note: part of the CRM Research Programme Homotopy Theory and Higher Categories
+  file: dcw2
+  title: On Massey products and triangulated categories
+  year: 2007
+
+- location: Split, Croatia
+  type: conference
+  event: Categories in Geometry and in Mathematical Physics
+  url: http://www.irb.hr/korisnici/zskoda/catconf.html
+  daymonth: 24-28 September
+  file: splitbeamer
+  title: Picard groupoids, determinant functors and K-theory
+  year: 2007
+
+- location: Bellaterra, Spain
+  type: conference
+  event: Barcelona Topology Workshop 2007
+  daymonth: 4-5 June
+  file: btw07
+  title: Exotic triangulated categories
+  year: 2007
+
+- location: D{\"u}sseldorf, Germany
+  type: conference
+  event: Sixth Nordrhein-Westfalen Topology Meeting
+  url: http://reh.math.uni-duesseldorf.de/%7Einternet/NRWTopology/
+  daymonth: 24-25 November
+  file: nrwdus
+  title: The 1-type of Waldhausen K-theory
+  year: 2006
+
+- location: Valladolid, Spain
+  type: conference
+  event: VASBI ICM Satellite Conference on K-theory and Noncommutative Geometry
+  url: http://mate.dm.uba.ar/%7Egcorti/VASBI.htm
+  daymonth: 31 August-6 September
+  file: vasbi
+  title: One the 1-type of Waldhausen K-theory
+  year: 2006
+
+- location: Madrid, Spain
+  type: conference
+  event: International Congress of Mathematicians 2006
+  daymonth: 22-30 August
+  file: 2-Muro-1403
+  title: The 1-type of a Waldhausen K-theory spectrum
+  year: 2006
+
+- location: Leeds, UK
+  type: conference
+  event: Workshop on Triangulated categories
+  daymonth: 13-19 August
+  file: LeeDOUT
+  title: Triangulated categories with universal Toda brackets
+  year: 2006

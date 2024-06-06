@@ -62,7 +62,9 @@ html(lang='en')
                             | Welcome to my website! I'm a professor of mathematics at the University of Seville. Here, you'll mostly find information about my research.
                         p.mb-5
                         {% for network in social %}
-                            a.ai.{{ network.icon }}.ai-2x.mx-2.professional-icons(href="{{ network.link }}", title="{{ network.name }}")
+                            a.ai.{{ network.icon }}.ai-2x.mx-2.professional-icons(href="{{ network.link }}", data-bs-toggle="tooltip",
+                            data-bs-placement="top",
+                            data-bs-title="{{ network.name }}")
                         {% endfor %}
                         a.btn.btn-primary.btn-xl(href='#about') Find Out More
 

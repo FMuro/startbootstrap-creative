@@ -66,7 +66,11 @@ html(lang='en')
                         li.nav-item
                             a.nav-link(href='presentations.html') Presentations
                         li.nav-item
+                            a.nav-link(href='#docencia') Docencia
+                        li.nav-item
                             a.nav-link(href='#portfolio') Gallery
+                        li.nav-item
+                            a.nav-link(href='#about') About
                         li.nav-item
                             a.nav-link(href='#contact') Contact
 
@@ -99,6 +103,16 @@ html(lang='en')
                 include ../subfiles/publications.pug
                 include ../subfiles/presentations_max.pug
 
+
+        // Docencia
+        section#docencia.page-section.bg-primary
+            .container.px-4.px-lg-5.text-center
+                h2.mb-4.text-white ¿Eres mi estudiante?
+                hr.divider.divider-light
+                p.text-white-75.mb-5.mx-5.text-center
+                    | Encontrarás toda la información referente a la asignatura en el campus virtual: horario de tutorías, documentos de interés, calificaciones, avisos... Ese será nuestro cauce de comunicación durante el curso. También puedes escribirme un correo electrónico cuando lo necesites.
+                a.btn.btn-light.btn-xl(href='https://ev.us.es/') Campus virtual
+
         // Portfolio
         #portfolio.bg-dark
             .container-fluid.p-0
@@ -113,6 +127,14 @@ html(lang='en')
                                 .project-name
                                     | {{ event.name }}
                     {% endfor %}
+
+        // About
+        section#about.page-section.bg-dark.text-white
+            .container.px-4.px-lg-5.text-center
+                h2.mb-4 About me
+                hr.divider
+                p.text-white-75.mb-5.mx-5.text-center
+                    | I completed my PhD at the #[i Universidad de Sevilla] in 2004. Then I spent two years at the #[i Max-PlanckInstitut für Mathematik] and two and a half years at the #[i Universitat de Barcelona] as a postdoc. I moved back to Seville in mid 2009 with an associate professorship. Here, I'm a member of the Mathematical Institute and of the Algebra Department.
 
         // contact
         section#contact.page-section

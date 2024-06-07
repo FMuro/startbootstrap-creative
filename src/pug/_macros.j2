@@ -2,9 +2,9 @@
 .col
     .card.shadow.rounded.h-100
         .card-body
-            | {% for name in authors %}{% if loop.index > 1 %}{% if loop.last %} and {% else %}, {% endif %}{% endif %}{{ name.given }} {{ name.family }}{% if loop.last %}.{% endif %}{% endfor %}<br>
+            | {% for name in authors %}{% if loop.index > 1 %}{% if loop.last %} and {% else %}, {% endif %}{% endif %}{{ name.given }} {{ name.family }}{% if loop.last %}{% endif %}{% endfor %}<br>
             | #[strong {{ title }}]<br>
-            | {% if type == 'article-journal' %}#[i {{ publication }}]{% endif %} {% if pages %} {% if type == 'chapter' %}#[i {{ publication }}], {% endif %}{% if series %}{{ series }},{% endif %} {{ volume }}{% endif %} {% if pages %}{% if type == 'article-journal' %}({% endif %}{% endif %}{{ year }}{% if pages %}{% if type == 'article-journal' %}){% endif %}{% if number %} no. {{ number }}{% endif %}, {% if pages %}{{ pages }}{% endif %}{% endif %}{% if note %}, {{ note }}{% endif %}. 
+            | {% if type == 'article-journal' %}#[i {{ publication }}]{% endif %} {% if pages %} {% if type == 'chapter' %}#[i {{ publication }}], {% endif %}{% if series %}{{ series }},{% endif %} {{ volume }}{% endif %} {% if pages %}{% if type == 'article-journal' %}({% endif %}{% endif %}{{ year }}{% if pages %}{% if type == 'article-journal' %}){% endif %}{% if number %} no. {{ number }}{% endif %}, {% if pages %}{{ pages }}{% endif %}{% endif %}{% if note %}, {{ note }}{% endif %}
         .card-footer
             {% if pdf != '' -%}
             {{ pdf }}

@@ -16,7 +16,7 @@ h3.col-lg-12.mt-3.mb-3.text-left
     {% endfilter -%}
 {% elif count.counter == maximum -%}
 .text-center.mt-2
-    a.btn.btn-primary.btn-xl(href='preprints.html') See all
+    a.btn.btn-primary.btn-xl(href='preprints.html') See all preprints
 {% endif -%}
 {% if count.update({'counter': count.counter + 1}) %} {% endif %}
 {% endif -%}
@@ -35,7 +35,7 @@ h3.col-lg-12.mt-3.mb-3.text-left
     {% endfilter -%}
 {% elif count.counter == maximum -%}
 .text-center.mt-2
-    a.btn.btn-primary.btn-xl(href='papers.html') See all
+    a.btn.btn-primary.btn-xl(href='papers.html') See all papers
 {% endif -%}
 {% if count.update({'counter': count.counter + 1}) %} {% endif -%}
 {% endif -%}

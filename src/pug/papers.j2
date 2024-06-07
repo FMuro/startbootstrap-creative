@@ -15,7 +15,10 @@ h3.col-lg-12.my-5.text-left
     {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.number, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url']) }}
     {% endfilter -%}
 {% elif count.counter == maximum -%}
-    a.btn.btn-primary.btn-xl(href='#about') See all
+{% filter indent(width=4) %}
+.text-center 
+    a.btn.btn-primary.btn-xl(href='#services') See all
+{% endfilter -%}
 {% endif -%}
 {% if count.update({'counter': count.counter + 1}) %} {% endif %}
 {% endif -%}
@@ -33,7 +36,8 @@ h3.col-lg-12.my-5.text-left
     {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.number, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url']) }}
     {% endfilter -%}
     {% elif count.counter == maximum -%}
-    a.btn.btn-primary.btn-xl(href='#about') See all
+    .text-center 
+        a.btn.btn-primary.btn-xl(href='#services') See all
     {% endif -%}
     {% if count.update({'counter': count.counter + 1}) %} {% endif -%}
     {% endif -%}

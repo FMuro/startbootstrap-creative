@@ -15,13 +15,13 @@ h3.col-lg-12.mt-3.mb-3.text-left
                 | {{ entry.daymonth }} {{ entry.year }}, {{ entry.location }}
             .card-footer
                 {% if entry.file -%}
-                a.paper-link(href="assets/files/presentations/{{ entry.file }}.pdf") Presentation
+                a.btn.btn-xs(href="assets/files/presentations/{{ entry.file }}.pdf") Presentation
                 {% endif -%}
                 {% if entry.video -%}
-                a.paper-link(href="{{ entry.video }}") Video
+                a.btn.btn-xs(href="{{ entry.video }}") Video
                 {% endif -%}
                 {% if entry.url -%}
-                a.paper-link(href="{{ entry.url }}") Site
+                a.btn.btn-xs(href="{{ entry.url }}") Site
                 {% endif -%}
 {% elif count.counter == maximum -%}
 .text-center.mt-2

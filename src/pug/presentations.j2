@@ -1,7 +1,11 @@
+{% set maximum = 2 %}
+
 h3.col-lg-12.my-5.text-left 
     .bi.bi-easel &nbsp; Presentations
 .row.row-cols-1.row-cols-xl-2.gx-5.gy-4
+{% set count = {'counter': 0} %}
     {% for entry in input %}
+    {% if count.counter < maximum %}
     .col
         .card.shadow.rounded.h-100
             .card-body
@@ -19,4 +23,11 @@ h3.col-lg-12.my-5.text-left
                 {% if entry.url -%}
                 a.paper-link(href="{{ entry.url }}") Site
                 {% endif -%}
+{% elif count.counter == maximum -%}
+{% filter indent(width=4) %}
+.text-center 
+    a.btn.btn-primary.btn-xl(href='#services') See all
+{% endfilter -%}
+{% endif -%}
+{% if count.update({'counter': count.counter + 1}) %} {% endif %}
     {% endfor %}

@@ -9,16 +9,14 @@
 {% if count.counter == 0 %}
 h3.col-lg-12.my-5.text-left 
     .bi.bi-journal &nbsp; Preprints
-.row.row-cols-1.row-cols-xl-2.gx-5.gy-4
+.row.row-cols-1.row-cols-xl-2.gx-5.gy-4.my-4
 {% endif -%}
     {% filter indent(width=4) %}
     {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.number, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url']) }}
     {% endfilter -%}
 {% elif count.counter == maximum -%}
-{% filter indent(width=4) %}
 .text-center 
     a.btn.btn-primary.btn-xl(href='#services') See all
-{% endfilter -%}
 {% endif -%}
 {% if count.update({'counter': count.counter + 1}) %} {% endif %}
 {% endif -%}
@@ -27,18 +25,18 @@ h3.col-lg-12.my-5.text-left
 
 h3.col-lg-12.my-5.text-left 
     .bi.bi-journal-check &nbsp; Papers
-.row.row-cols-1.row-cols-xl-2.gx-5.gy-4
-    {% set count = {'counter': 0} %}
-    {% for entry in input %}
-    {% if entry.type != '' %}
-    {% if count.counter < maximum %}
+.row.row-cols-1.row-cols-xl-2.gx-5.gy-4.my-4
+{% set count = {'counter': 0} %}
+{% for entry in input %}
+{% if entry.type != '' %}
+{% if count.counter < maximum %}
     {% filter indent(width=4) %}
     {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.number, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url']) }}
     {% endfilter -%}
-    {% elif count.counter == maximum -%}
-    .text-center 
-        a.btn.btn-primary.btn-xl(href='#services') See all
-    {% endif -%}
-    {% if count.update({'counter': count.counter + 1}) %} {% endif -%}
-    {% endif -%}
-    {% endfor %}
+{% elif count.counter == maximum -%}
+.text-center 
+    a.btn.btn-primary.btn-xl(href='#services') See all
+{% endif -%}
+{% if count.update({'counter': count.counter + 1}) %} {% endif -%}
+{% endif -%}
+{% endfor %}

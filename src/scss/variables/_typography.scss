@@ -2,30 +2,6 @@
 // Typography
 //
 
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  src: url('../assets/fonts/webfonts/Merriweather[opsz,wdth,wght].woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: italic;
-  src: url('../assets/fonts/webfonts/Merriweather-Italic[opsz,wdth,wght].woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Merriweather-Sans';
-  font-style: normal;
-  src: url('../assets/fonts/webfonts/Merriweather-Sans.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Merriweather-Sans';
-  font-style: italic;
-  src: url('../assets/fonts/webfonts/Merriweather-Sans-Italic.woff2') format('woff2');
-}
-
 .merriweather-light {
   font-family: "Merriweather", serif;
   font-weight: 300;
@@ -51,30 +27,40 @@
 }
 
 .merriweather-light-italic {
-  font-family: "Merriweather-Italic", serif;
+  font-family: "Merriweather", serif;
   font-weight: 300;
   font-style: italic;
 }
 
 .merriweather-regular-italic {
-  font-family: "Merriweather-Italic", serif;
+  font-family: "Merriweather", serif;
   font-weight: 400;
   font-style: italic;
 }
 
 .merriweather-bold-italic {
-  font-family: "Merriweather-Italic", serif;
+  font-family: "Merriweather", serif;
   font-weight: 700;
   font-style: italic;
 }
 
 .merriweather-black-italic {
-  font-family: "Merriweather-Italic", serif;
+  font-family: "Merriweather", serif;
   font-weight: 900;
   font-style: italic;
 }
 
-$font-family-sans-serif: "Merriweather-Sans", -apple-system, BlinkMacSystemFont,
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+.merriweather-sans-uniquifier {
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+$font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
   "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 

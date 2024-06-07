@@ -7,13 +7,13 @@
             | {% if type == 'article-journal' %}#[i {{ publication }}]{% endif %} {% if pages %} {% if type == 'chapter' %}#[i {{ publication }}], {% endif %}{% if series %}{{ series }},{% endif %} {{ volume }}{% endif %} {% if pages %}{% if type == 'article-journal' %}({% endif %}{% endif %}{{ year }}{% if pages %}{% if type == 'article-journal' %}){% endif %}{% if number %} no. {{ number }}{% endif %}, {% if pages %}{{ pages }}{% endif %}{% endif %}{% if note %}, {{ note }}{% endif %}. 
         .card-footer
             {% if DOI -%}
-            a.paper-link(href="https://doi.org/{{ DOI }}") publisher
+            a.btn.btn-xs(href="https://doi.org/{{ DOI }}") publisher
             {% endif -%}
             {% if arxiv -%}
-            a.paper-link(href="https://arxiv.org/abs/{{ arxiv }}") arxiv
+            a.btn.btn-xs(href="https://arxiv.org/abs/{{ arxiv }}") arxiv
             {% endif -%}
             {% if abstract -%}
-            a.paper-link(type="button", data-bs-toggle="modal", data-bs-target="#abstract{{ id }}") Abstract
+            a.btn.btn-xs(type="button", data-bs-toggle="modal", data-bs-target="#abstract{{ id }}") Abstract
 
             // Modal
             .modal.fade(id="abstract{{ id }}", tabindex="-1", role="dialog", aria-labelledby="{{ title }}", aria-hidden="true")
@@ -27,7 +27,7 @@
                             button.btn.btn-primary(type="button", data-bs-dismiss="modal") Close
             {% endif -%}
             {% if bibtex -%}
-            a.paper-link(type="button", data-bs-toggle="modal", data-bs-target="#bibtex{{ id }}") BibTeX
+            a.btn.btn-xs(type="button", data-bs-toggle="modal", data-bs-target="#bibtex{{ id }}") BibTeX
 
             // Modal
             .modal.fade(id="bibtex{{ id }}", tabindex="-1", role="dialog", aria-labelledby="{{ title }}", aria-hidden="true")
@@ -40,6 +40,6 @@
                             button.btn.btn-primary(type="button", data-bs-dismiss="modal") Close
             {% endif -%}
             {% if zbmath -%}
-            a.paper-link(href="{{ zbmath }}") zbMath
+            a.btn.btn-xs(href="{{ zbmath }}") zbMath
             {% endif -%}
 {% endmacro %}

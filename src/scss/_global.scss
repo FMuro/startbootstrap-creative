@@ -37,13 +37,18 @@ a {
     }
 }
 
-.paper-link {
-    padding: 0 4px;
+.btn-xs {
+    padding: 0px 4px;
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
+  }
+  
+  .btn-xs:hover,
+  .btn-xs:focus {
+    color: #cf5331;
+  }
 
 .professional-icons {
     color: fade-out($white, 0.25) !important;

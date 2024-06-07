@@ -1,8 +1,8 @@
 {% set maximum = 2 %}
 
-h3.col-lg-12.mt-5.mb-2.text-left 
+h3.col-lg-12.mt-3.mb-3.text-left 
     .bi.bi-easel &nbsp; Presentations
-.row.row-cols-1.row-cols-xl-2.gx-5.gy-4.my-4
+.row.row-cols-1.row-cols-xl-2.gx-5.gy-4.mb-4
 {% set count = {'counter': 0} %}
 {% for entry in input %}
 {% if count.counter < maximum %}
@@ -24,7 +24,7 @@ h3.col-lg-12.mt-5.mb-2.text-left
                 a.paper-link(href="{{ entry.url }}") Site
                 {% endif -%}
 {% elif count.counter == maximum -%}
-.text-center 
+.text-center.mt-2
     a.btn.btn-primary.btn-xl(href='#services') See all
 {% endif -%}
 {% if count.update({'counter': count.counter + 1}) %} {% endif %}

@@ -69,7 +69,7 @@ html(lang='en')
                 h2.text-center.mt-0 
                     .bi.bi-easel &nbsp; Presentations
                 hr.divider
-                .row.row-cols-1.row-cols-xl-2.gx-5.gy-4.mb-4
+                .row.row-cols-1.gx-5.gy-4.mb-4
                 {% for entry in input %}
                 {% filter indent(width=20) %}
                     {{ presentation(entry.title, entry.event, entry.note, entry.daymonth, entry.year, entry.location, entry.file, entry.video, entry.url) }}

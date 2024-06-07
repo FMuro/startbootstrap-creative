@@ -10,7 +10,7 @@ header.masthead {
     // if the image name change, make sure to update the url path below!
 
     background: linear-gradient(to bottom,
-        #{fade-out($brown, 0.2)} 0%,
+        #{fade-out($brown, 0.6)} 0%,
         #{fade-out($brown, 0.2)} 100%),
         url("../assets/img/bg-masthead_576w.webp");
     background-position: center;
@@ -24,7 +24,7 @@ header.masthead {
 
     @include media-breakpoint-up(md) {
         background: linear-gradient(to bottom,
-        #{fade-out($brown, 0.2)} 0%,
+        #{fade-out($brown, 0.6)} 0%,
         #{fade-out($brown, 0.2)} 100%),
         url("../assets/img/bg-masthead_768w.webp");
         background-position: center;
@@ -40,7 +40,7 @@ header.masthead {
         padding-bottom: 0;
 
         background: linear-gradient(to bottom,
-        #{fade-out($brown, 0.2)} 0%,
+        #{fade-out($brown, 0.6)} 0%,
         #{fade-out($brown, 0.2)} 100%),
         url("../assets/img/bg-masthead_992w.webp");
         background-position: center;
@@ -59,7 +59,7 @@ header.masthead {
 
     @include media-breakpoint-up(xl) {
         background: linear-gradient(to bottom,
-        #{fade-out($brown, 0.2)} 0%,
+        #{fade-out($brown, 0.6)} 0%,
         #{fade-out($brown, 0.2)} 100%),
         url("../assets/img/bg-masthead_1200w.webp");
         background-position: center;
@@ -74,7 +74,7 @@ header.masthead {
 
     @include media-breakpoint-up(xxl) {
         background: linear-gradient(to bottom,
-        #{fade-out($brown, 0.2)} 0%,
+        #{fade-out($brown, 0.6)} 0%,
         #{fade-out($brown, 0.2)} 100%),
         url("../assets/img/bg-masthead_1400w.webp");
         background-position: center;

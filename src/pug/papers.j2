@@ -63,9 +63,18 @@ html(lang='en')
                 hr.divider
                 .row.row-cols-1.row-cols-xl-2.gx-5.gy-4.mb-4
                 {% for entry in input %}
+                {% if entry.id in extras.keys() %}
+                {% if extras[entry.id] == ''%}
+                {% set pdf = ('a.btn.btn-xs(href="assets/files/papers/' ~ entry.id ~ '.pdf") PDF') %}
+                {% else %}
+                {% set pdf = ('a.btn.btn-xs(href="' ~ extras[entry.id] ~ '") PDF') %}
+                {% endif %}
+                {% else %}
+                {% set pdf = '' %}
+                {% endif %}
                 {% if entry.type != '' %}
                     {% filter indent(width=20) %}
-                    {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.number, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url']) }}
+                    {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.number, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url'], pdf) }}
                     {% endfilter -%}
                 {% endif -%}
                 {% endfor %}

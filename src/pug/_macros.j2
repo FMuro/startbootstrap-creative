@@ -1,4 +1,4 @@
-{% macro paper (id, authors, title, year, type, publication, volume, number, series, pages, note, DOI, arxiv, abstract, bibtex, zbmath) %}
+{% macro paper (id, authors, title, year, type, publication, volume, number, series, pages, note, DOI, arxiv, abstract, bibtex, zbmath, pdf) %}
 .col
     .card.shadow.rounded.h-100
         .card-body
@@ -6,6 +6,9 @@
             | #[strong {{ title }}].<br>
             | {% if type == 'article-journal' %}#[i {{ publication }}]{% endif %} {% if pages %} {% if type == 'chapter' %}#[i {{ publication }}], {% endif %}{% if series %}{{ series }},{% endif %} {{ volume }}{% endif %} {% if pages %}{% if type == 'article-journal' %}({% endif %}{% endif %}{{ year }}{% if pages %}{% if type == 'article-journal' %}){% endif %}{% if number %} no. {{ number }}{% endif %}, {% if pages %}{{ pages }}{% endif %}{% endif %}{% if note %}, {{ note }}{% endif %}. 
         .card-footer
+            {% if pdf != '' -%}
+            {{ pdf }}
+            {% endif %}
             {% if DOI -%}
             a.btn.btn-xs(href="https://doi.org/{{ DOI }}") publisher
             {% endif -%}

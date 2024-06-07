@@ -1,4 +1,4 @@
-{% from "src/pug/_macros.j2" import presentation %}
+{% from "src/pug/_macros.j2" import paper %}
 
 doctype html
 html(lang='en')
@@ -59,13 +59,17 @@ html(lang='en')
         // Cards
         section#cards.page-section
             .container.px-4.px-lg-5
-                h2.text-center.mt-0 Presentations
+                h2.text-center.mt-0 Preprints
                 hr.divider
                 .row.row-cols-1.row-cols-xl-2.gx-5.gy-4.mb-4
                 {% for entry in input %}
-                {% filter indent(width=20) %}
-                    {{ presentation(entry.title, entry.event, entry.note, entry.daymonth, entry.year, entry.location, entry.file, entry.video, entry.url) }}
-                {% endfilter %}
+                {% if entry.type == '' and (entry.issued['date-parts'][0][0] | int) > 2020%}
+                {% if entry.type == '' %}
+                    {% filter indent(width=20) %}
+                    {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.number, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url']) }}
+                    {% endfilter -%}
+                {% endif -%}
+                {% endif -%}
                 {% endfor %}
 
         // Footer

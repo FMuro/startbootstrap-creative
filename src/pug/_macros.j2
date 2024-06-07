@@ -43,3 +43,23 @@
             a.btn.btn-xs(href="{{ zbmath }}") zbMath
             {% endif -%}
 {% endmacro %}
+
+{% macro presentation (title, event, note, daymonth, year, location, file, video, url) %}
+.col
+    .card.shadow.rounded.h-100
+        .card-body
+            | #[strong {{ title }}]<br>
+            | #[i {{ event }}]<br>
+            | {% if note %}{{ note }}<br>{% endif %}
+            | {{ daymonth }} {{ year }}, {{ location }}
+        .card-footer
+            {% if file -%}
+            a.btn.btn-xs(href="assets/files/presentations/{{ file }}.pdf") Presentation
+            {% endif -%}
+            {% if video -%}
+            a.btn.btn-xs(href="{{ video }}") Video
+            {% endif -%}
+            {% if url -%}
+            a.btn.btn-xs(href="{{ url }}") Site
+            {% endif -%}
+{% endmacro %}

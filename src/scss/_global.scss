@@ -19,7 +19,13 @@ body {
 
 //- Page section styling
 .page-section {
-    padding: 8rem 0;
+    padding: 4rem 0;
+    @include media-breakpoint-up(md) {
+        padding: 6rem 0;
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 8rem 0;
+    }
 }
 
 // Custom utilities for this theme

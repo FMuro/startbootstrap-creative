@@ -26,8 +26,8 @@
                             h5.modal-title(id="abstract{{ id }}") {{ title }}
                         .modal-body
                             p {{ abstract }}
-                        .modal-footer
-                            button.btn.btn-primary(type="button", data-bs-dismiss="modal") Close
+                        .modal-footer.justify-content-center
+                            button.btn.btn-primary.btn-xl(type="button", data-bs-dismiss="modal") Close
             {% endif -%}
             {% if bibtex -%}
             a.btn.btn-xs(type="button", data-bs-toggle="modal", data-bs-target="#bibtex{{ id }}") BibTeX
@@ -39,8 +39,8 @@
                         .modal-body
                             p(id="bibtex{{ id }}") 
                                 code {{ bibtex.replace('\n', '<br>&nbsp;&nbsp;&nbsp;&nbsp;') }}
-                        .modal-footer
-                            button.btn.btn-primary(type="button", data-bs-dismiss="modal") Close
+                        .modal-footer.justify-content-center
+                            button.btn.btn-primary.btn-xl(type="button", data-bs-dismiss="modal") Close
             {% endif -%}
             {% if zbmath -%}
             a.btn.btn-xs(href="{{ zbmath }}") zbMath

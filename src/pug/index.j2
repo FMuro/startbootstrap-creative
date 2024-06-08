@@ -57,8 +57,15 @@ html(lang='en')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto.my-2.my-lg-0
-                        li.nav-item
-                            a.nav-link(href='#research') Research
+                        li.nav-item.dropdown
+                            a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#research', data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Research
+                            ul.dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
+                                li.nav-item 
+                                    a.nav-link(href="preprints.html") Preprints
+                                li.nav-item 
+                                    a.nav-link(href="papers.html") Papers
+                                li.nav-item 
+                                    a.nav-link(href="presentations.html") Presentations
                         li.nav-item
                             a.nav-link(href='#docencia') Docencia
                         li.nav-item

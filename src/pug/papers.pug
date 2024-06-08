@@ -45,24 +45,31 @@ html(lang='en')
         // Navigation
         nav#secondaryNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
             .container.px-4.px-lg-5
-                a.navbar-brand(href='index.html#page-top') Fernando Muro's website
+                a.navbar-brand(href='index.html#page-top') Fernando Muro
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto.my-2.my-lg-0
+                        li.nav-item.dropdown
+                            a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='index.html#research', data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Research
+                            ul.dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
+                                li.nav-item 
+                                    a.nav-link(href="preprints.html") Preprints
+                                li.nav-item 
+                                    a.nav-link(href="#page-top", style="color: #f4623a;") Papers
+                                li.nav-item 
+                                    a.nav-link(href="presentations.html") Presentations
                         li.nav-item
-                            a.nav-link(href='index.html#research') Research
-                        li.nav-item
-                            a.nav-link(href='#docencia') Docencia
+                            a.nav-link(href='index.html#docencia') Docencia
                         li.nav-item
                             a.nav-link(href='index.html#portfolio') Gallery
                         li.nav-item
-                            a.nav-link(href='#about') About
+                            a.nav-link(href='index.html#about') About
                         li.nav-item
                             a.nav-link(href='index.html#contact') Contact
 
         // Cards
-        section#papers.page-section
+        section#paperspage.page-section
             .container.px-4.px-lg-5
                 h2.text-center.mt-0 
                     .bi.bi-journal-check &nbsp; Papers
@@ -92,7 +99,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH07719245") Derived homotopy algebras
+                                                h5.modal-title Derived homotopy algebras
                                             .modal-body
                                                 p We develop a theory of minimal models for algebras over an operad defined over a commutative ring, not necessarily a field, extending and supplementing the work of Sagave in the associative case.
                                             .modal-footer.justify-content-center
@@ -134,7 +141,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH07700052") Massey products for algebras over operads
+                                                h5.modal-title Massey products for algebras over operads
                                             .modal-body
                                                 p We define a generalization of Massey products for algebras over a Koszul operad in characteristic zero, extending Massey's and Allday's and Retah's in the associative and Lie cases, respectively. We establish connections with minimal models and with Dimitrova's universal operadic cohomology class. We compute a Gerstenhaber algebra example and a hypercommutative algebra example related to the Chevalley-Eilenberg complex of the Heisenberg Lie algebra.
                                             .modal-footer.justify-content-center
@@ -176,7 +183,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH07681901") Derived universal Massey products
+                                                h5.modal-title Derived universal Massey products
                                             .modal-body
                                                 p We define an obstruction to the formality of a differential graded algebra over a graded operad defined over a commutative ground ring. This obstruction lives in the derived operadic cohomology of the algebra. Moreover, it determines all operadic Massey products induced on the homology algebra, hence the name of derived universal Massey product.
                                             .modal-footer.justify-content-center
@@ -226,7 +233,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH07506910") Enhanced finite triangulated categories
+                                                h5.modal-title Enhanced finite triangulated categories
                                             .modal-body
                                                 p We give a necessary and sufficient condition for the existence of an enhancement of a finite triangulated category. Moreover, we show that enhancements are unique when they exist, up to Morita equivalence.
                                             .modal-footer.justify-content-center
@@ -276,7 +283,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH07242463") The first obstructions to enhancing a triangulated category
+                                                h5.modal-title The first obstructions to enhancing a triangulated category
                                             .modal-body
                                                 p In this paper we relate triangulated category structures to the cohomology of small categories and define initial obstructions to the existence of an algebraic or topological enhancement. We show that these obstructions do not vanish in an example of triangulated category without models. We also obtain cohomological characterizations of pre-triangulated DG, A-infinity, and spectral categories.
                                             .modal-footer.justify-content-center
@@ -350,7 +357,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH07053579") Torsion homology and cellular approximation
+                                                h5.modal-title Torsion homology and cellular approximation
                                             .modal-body
                                                 p In this note we describe the role of the Schur multiplier in the structure of the $p$-torsion of discrete groups. More concretely, we show how the knowledge of $H_2G$ allows to approximate many groups by colimits of copies of finite $p$-groups. Our examples include interesting families of non-commutative infinite groups, including Burnside groups, certain solvable examples and the first Grigorchuk group. We also provide a counterexample for a conjecture of E. Farjoun.
                                             .modal-footer.justify-content-center
@@ -392,7 +399,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH07006249") Homotopy theory of bicomplexes
+                                                h5.modal-title Homotopy theory of bicomplexes
                                             .modal-body
                                                 p We define two model structures on the category of bicomplexes concentrated in the right half plane. The first model structure has weak equivalences detected by the totalisation functor. The second model structure's weak equivalences are detected by the $E^2$-term of the spectral sequence associated to the filtration of the total complex by the horizontal degree. We then extend this result to twisted complexes.
                                             .modal-footer.justify-content-center
@@ -434,7 +441,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH06791664") Correction to: “Homotopy theory of nonsymmetric operads. I–II”
+                                                h5.modal-title Correction to: “Homotopy theory of nonsymmetric operads. I–II”
                                             .modal-body
                                                 p We correct a mistake in the construction of push-outs along free morphisms of algebras over a nonsymmetric operad in arXiv:1101.1634 [math.AT], and we fix the affected results in arXiv:1101.1634 [math.AT] and arXiv:1304.6641 [math.AT].
                                             .modal-footer.justify-content-center
@@ -476,7 +483,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH06673997") $K$-theory of derivators revisited
+                                                h5.modal-title $K$-theory of derivators revisited
                                             .modal-body
                                                 p We define a $K$-theory for pointed right derivators and show that it agrees with Waldhausen $K$-theory in the case where the derivator arises from a good Waldhausen category. This $K$-theory is not invariant under general equivalences of derivators, but only under a stronger notion of equivalence that is defined by considering a simplicial enrichment of the category of derivators. We show that derivator $K$-theory, as originally defined, is the best approximation to Waldhausen $K$-theory by a functor that is invariant under equivalences of derivators.
                                             .modal-footer.justify-content-center
@@ -518,7 +525,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH06571599") Cylinders for non-symmetric DG-operads via homological perturbation theory
+                                                h5.modal-title Cylinders for non-symmetric DG-operads via homological perturbation theory
                                             .modal-body
                                                 p We construct small cylinders for cellular non-symmetric DG-operads over an arbitrary commutative ring by using the basic perturbation lemma from homological algebra. We show that our construction, applied to the A-infinity operad, yields the operad parametrizing A-infinity maps whose linear part is the identity. We also compute some other examples with non-trivial operations in arities 1 and 0.
                                             .modal-footer.justify-content-center
@@ -560,7 +567,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH06550647") Homotopy units in $A$-infinity algebras
+                                                h5.modal-title Homotopy units in $A$-infinity algebras
                                             .modal-body
                                                 p We show that the canonical map from the associative operad to the unital associative operad is a homotopy epimorphism for a wide class of symmetric monoidal model categories. As a consequence, the space of unital associative algebra structures on a given object is up to homotopy a subset of connected components of the space of non-unital associative algebra structures.
                                             .modal-footer.justify-content-center
@@ -602,7 +609,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH06548165") Transfinite Adams representability
+                                                h5.modal-title Transfinite Adams representability
                                             .modal-body
                                                 p In a well generated triangulated category T, given a regular cardinal a, we consider the following problems: given a functor from the category of a-compact objects to abelian groups that preserves products of <a objects and takes exact triangles to exact sequences, is it the restriction of a representable functor in T? Is every natural transformation between two such restricted representable functors induced by a map between the representatives? If the answer to both questions is positive we say that T satisfies a-Adams representability. A classical result going back to Brown and Adams shows that the stable homotopy category satisfies Adams representability for the first infinite cardinal. For that cardinal, Adams representability is well understood thanks to the work of Christensen, Keller and Neeman. In this paper, we develop an obstruction theory to decide when T satisfies a-Adams representability. We derive necessary and sufficient conditions of homological nature, and we compute several examples. In particular, we show that there are rings satisfying a-Adams representability for all non-countable cardinals a and rings which do not satisfy a-Adams representability for any infinite cardinal a. Moreover, we exhibit rings for which the answer to both questions is no for infinite many cardinals. As a side result, we give an example of an infinite phantom map.
                                             .modal-footer.justify-content-center
@@ -644,7 +651,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH06454207") On the unit of a monoidal model category
+                                                h5.modal-title On the unit of a monoidal model category
                                             .modal-body
                                                 p In this paper we show how to modify cofibrations in a monoidal model category so that the tensor unit becomes cofibrant while keeping the same weak equivalences. We obtain aplications to enriched categories and coloured operads in stable homotopy theory.
                                             .modal-footer.justify-content-center
@@ -686,7 +693,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH06451815") Dwyer-Kan homotopy theory of enriched categories
+                                                h5.modal-title Dwyer-Kan homotopy theory of enriched categories
                                             .modal-body
                                                 p We construct a model structure on the category of small categories enriched over a combinatorial closed symmetric monoidal model category satisfying the monoid axiom. Weak equivalences are Dwyer-Kan equivalences, i.e. enriched functors which induce weak equivalences on morphism objects and equivalences of ordinary categories when we take sets of connected components on morphism objects.
                                             .modal-footer.justify-content-center
@@ -731,7 +738,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH06417698") On determinant functors and $K$-theory
+                                                h5.modal-title On determinant functors and $K$-theory
                                             .modal-body
                                                 p In this paper we introduce a new approach to determinant functors which allows us to extend Deligne's determinant functors for exact categories to Waldhausen categories, (strongly) triangulated categories, and derivators. We construct universal determinant functors in all cases by original methods which are interesting even for the known cases. Moreover, we show that the target of each universal determinant functor computes the corresponding $K$-theory in dimensions 0 and 1. As applications, we answer open questions by Maltsiniotis and Neeman on the $K$-theory of (strongly) triangulated categories and a question of Grothendieck to Knudsen on determinant functors. We also prove additivity theorems for low-dimensional $K$-theory and obtain generators and (some) relations for various $K_{1}$-groups.
                                             .modal-footer.justify-content-center
@@ -777,7 +784,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH06342603") Unital associahedra
+                                                h5.modal-title Unital associahedra
                                             .modal-body
                                                 p We construct a topological cellular operad such that the algebras over its cellular chains are the homotopy unital A-infinity algebras of Fukaya-Oh-Ohta-Ono.
                                             .modal-footer.justify-content-center
@@ -819,7 +826,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH06281920") Moduli spaces of algebras over nonsymmetric operads
+                                                h5.modal-title Moduli spaces of algebras over nonsymmetric operads
                                             .modal-body
                                                 p In this paper we study spaces of algebras over an operad (non-symmetric) in symmetric monoidal model categories. We first compute the homotopy fiber of the forgetful functor sending an algebra to its underlying object, extending a result of Rezk. We then apply this computation to the construction of geometric moduli stacks of algebras over an operad in a homotopical algebraic geometry context in the sense of To\"en and Vezzosi. We show under mild hypotheses that the moduli stack of unital associative algebras is a Zariski open substack of the moduli stack of non-necessarily unital associative algebras. The classical analogue for finite-dimensional vector spaces was noticed by Gabriel.
                                             .modal-footer.justify-content-center
@@ -861,7 +868,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH06243329") Homotopy theory of non-symmetric operads. II: Change of base category and left properness
+                                                h5.modal-title Homotopy theory of non-symmetric operads. II: Change of base category and left properness
                                             .modal-body
                                                 p We prove, under mild assumptions, that a Quillen equivalence between symmetric monoidal model categories gives rise to a Quillen equivalence between their model categories of (non-symmetric) operads, and also between model categories of algebras over operads. We also show left properness results on model categories of operads and algebras over operads. As an application, we prove homotopy invariance for (unital) associative operads.
                                             .modal-footer.justify-content-center
@@ -903,7 +910,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH05918250") A note on $K$-theory and triangulated derivators
+                                                h5.modal-title A note on $K$-theory and triangulated derivators
                                             .modal-body
                                                 p In this paper we show an example of two differential graded algebras that have the same derivator K-theory but non-isomorphic Waldhausen K-theory. We also prove that Maltsiniotis's comparison and localization conjectures for derivator K-theory cannot be simultaneously true.
                                             .modal-footer.justify-content-center
@@ -945,7 +952,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH05904608") Homotopy theory of nonsymmetric operads
+                                                h5.modal-title Homotopy theory of nonsymmetric operads
                                             .modal-body
                                                 p We endow categories of non-symmetric operads with natural model structures. We work with no restriction on our operads and only assume the usual hypotheses for model categories with a symmetric monoidal structure. We also study categories of algebras over these operads in enriched non-symmetric monoidal model categories.
                                             .modal-footer.justify-content-center
@@ -987,7 +994,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH05882112") The algebra of secondary homotopy operations in ring spectra
+                                                h5.modal-title The algebra of secondary homotopy operations in ring spectra
                                             .modal-body
                                                 p The primary algebraic model of a ring spectrum is the ring of homotopy groups. We introduce the secondary model which has the structure of a secondary analogue of a ring. This new algebraic model determines Massey products and cup-one squares. As an application we obtain new derivations of the homotopy ring.
                                             .modal-footer.justify-content-center
@@ -1029,7 +1036,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH05538788") Toda brackets and cup-one squares for ring spectra
+                                                h5.modal-title Toda brackets and cup-one squares for ring spectra
                                             .modal-body
                                                 p In this paper we prove the laws of Toda brackets on the homotopy groups of a connective ring spectrum and the laws of the cup-one square in the homotopy groups of a commutative connective ring spectrum.
                                             .modal-footer.justify-content-center
@@ -1102,7 +1109,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH05496973") The symmetric action on secondary homotopy groups
+                                                h5.modal-title The symmetric action on secondary homotopy groups
                                             .modal-body
                                                 p We show that the symmetric track group, which is an extension of the symmetric group associated to the second Stiefel- Withney class, acts as a crossed module on the secondary homotopy group of a pointed space. An application is given to cup-one products in unstable homotopy groups of spheres, generalizing a formula of Barratt-Jones-Mahowald.
                                             .modal-footer.justify-content-center
@@ -1143,7 +1150,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH05381934") On $K_1$ of a Waldhausen category
+                                                h5.modal-title On $K_1$ of a Waldhausen category
                                             .modal-body
                                                 p We give a simple representation of all elements in K_1 of a Waldhausen category and prove relations between these representatives which hold in K_1.
                                             .modal-footer.justify-content-center
@@ -1185,7 +1192,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH05367270") Smash products for secondary homotopy groups
+                                                h5.modal-title Smash products for secondary homotopy groups
                                             .modal-body
                                                 p We construct a smash product operation on secondary homotopy groups yielding the structure of a lax symmetric monoidal functor. Applications on cup-one products, Toda brackets and Whitehead products are considered. In particular we prove a formula for the crossed effect of the cup-one product operation on unstable homotopy groups of spheres which was claimed by Barratt-Jones-Mahowald.
                                             .modal-footer.justify-content-center
@@ -1227,7 +1234,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH05351182") Secondary homotopy groups
+                                                h5.modal-title Secondary homotopy groups
                                             .modal-body
                                                 p Secondary homotopy groups supplement the structure of classical homotopy groups. They yield a track functor on the track category of pointed spaces compatible with fiber sequences, suspensions and loop spaces. They also yield algebraic models of homotopy types with homotopy groups concentrated in two consecutive dimensions.
                                             .modal-footer.justify-content-center
@@ -1298,7 +1305,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH05306025") Maltsiniotis’s first conjecture for $K_{1}$
+                                                h5.modal-title Maltsiniotis’s first conjecture for $K_{1}$
                                             .modal-body
                                                 p We show that K_1 of an exact category agrees with K_1 of the associated triangulated derivator. More generally we show that K_1 of a Waldhausen category with cylinders and a saturated class of weak equivalences coincides with K_1 of the associated right pointed derivator.
                                             .modal-footer.justify-content-center
@@ -1340,7 +1347,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH05208165") Triangulated categories without models
+                                                h5.modal-title Triangulated categories without models
                                             .modal-body
                                                 p We exhibit examples of triangulated categories which are neither the stable category of a Frobenius category nor a full triangulated subcategory of the homotopy category of a stable model category. Even more drastically, our examples do not admit any non-trivial exact functors to or from these algebraic respectively topological triangulated categories.
                                             .modal-footer.justify-content-center
@@ -1382,7 +1389,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH05201720") The 1-type of a Waldhausen $K$-theory spectrum
+                                                h5.modal-title The 1-type of a Waldhausen $K$-theory spectrum
                                             .modal-body
                                                 p We give a small functorial algebraic model for the 2-stage Postnikov section of the K-theory spectrum of a Waldhausen category and use our presentation to describe the multiplicative structure with respect to biexact functors.
                                             .modal-footer.justify-content-center
@@ -1457,7 +1464,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH02244508") On the functoriality of cohomology of categories
+                                                h5.modal-title On the functoriality of cohomology of categories
                                             .modal-body
                                                 p In this paper we show that the Baues-Wirsching complex used to define cohomology of categories is a 2-functor from a certain 2-category of natural systems of abelian groups to the 2-category of chain complexes, chain homomorphism and relative homotopy classes of chain homotopies. As a consequence we derive (co)localization theorems for this cohomology.
                                             .modal-footer.justify-content-center
@@ -1597,7 +1604,7 @@ html(lang='en')
                                     .modal-dialog(role="document").modal-dialog-centered
                                         .modal-content
                                             .modal-header
-                                                h5.modal-title(id="abstractzbMATH05068816") Representation theory of some infinite dimensional algebras arising in continuously controlled algebra and topology.
+                                                h5.modal-title Representation theory of some infinite dimensional algebras arising in continuously controlled algebra and topology.
                                             .modal-body
                                                 p In this paper we determine the representation type of some algebras of infinite matrices continuously controlled at infinity by a compact metrizable space. We explicitly classify their finitely presented modules in the finite and tame cases. The algebra of row-column-finite (or locally finite) matrices over an arbitrary field is one of the algebras considered in this paper, its representation type is shown to be finite.
                                             .modal-footer.justify-content-center

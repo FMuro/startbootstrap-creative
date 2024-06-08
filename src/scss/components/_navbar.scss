@@ -38,6 +38,13 @@
         }
     }
 
+    .navbar-nav li > ul.dropdown-menu {
+        display: block;
+        padding-left: 2rem;
+        color: fade-out($black, 0.3);
+        border-color: transparent;
+    }
+
     @include media-breakpoint-up(lg) {
         // Base styling for the navbar - screen sizes greater than the large breakpoint
         box-shadow: none;
@@ -70,6 +77,24 @@
             }
         }
 
+        .navbar-nav li > ul.dropdown-menu {
+            display: none;
+        }
+
+        .navbar-nav li:hover > ul.dropdown-menu {
+            display: block;
+            background-color: transparent;
+            border-color: $primary;
+            padding-left: 0rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+
+        .navbar-nav li:hover > ul.dropdown-menu > li {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+
         // Navbar styling applied when the page is scrolled
         &.navbar-shrink {
             box-shadow: $box-shadow;
@@ -93,6 +118,19 @@
                         }
                     }
                 }
+            }
+
+            .navbar-nav li:hover > ul.dropdown-menu {
+                display: block;
+                background-color: var(--bs-body-bg);
+                padding-left: 0rem;
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+            }
+
+            .navbar-nav li:hover > ul.dropdown-menu > li {
+                padding-top: .5rem;
+                padding-bottom: .5rem;
             }
         }
     }
@@ -134,6 +172,13 @@
         }
     }
 
+    .navbar-nav li > ul.dropdown-menu {
+        display: block;
+        padding-left: 2rem;
+        color: fade-out($black, 0.3);
+        border-color: transparent;
+    }
+
     @include media-breakpoint-up(lg) {
         // Base styling for the navbar - screen sizes greater than the large breakpoint
         box-shadow: $box-shadow;
@@ -165,6 +210,24 @@
                     }
                 }
             }
+        }
+
+        .navbar-nav li > ul.dropdown-menu {
+            display: none;
+        }
+
+        .navbar-nav li:hover > ul.dropdown-menu {
+            display: block;
+            background-color: var(--bs-body-bg);
+            border-color: $primary;
+            padding-left: 0rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+
+        .navbar-nav li:hover > ul.dropdown-menu > li {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
         }
     }
 }

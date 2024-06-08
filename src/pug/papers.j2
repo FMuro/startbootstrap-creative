@@ -50,8 +50,15 @@ html(lang='en')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto.my-2.my-lg-0
-                        li.nav-item
-                            a.nav-link(href='index.html#research') Research
+                        li.nav-item.dropdown
+                            a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='index.html#research', data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Research
+                            ul.dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
+                                li.nav-item 
+                                    a.nav-link(href="preprints.html") Preprints
+                                li.nav-item 
+                                    a.nav-link(href="#page-top", style="color: #f4623a;") Papers
+                                li.nav-item 
+                                    a.nav-link(href="presentations.html") Presentations
                         li.nav-item
                             a.nav-link(href='index.html#docencia') Docencia
                         li.nav-item
@@ -62,7 +69,7 @@ html(lang='en')
                             a.nav-link(href='index.html#contact') Contact
 
         // Cards
-        section#papers.page-section
+        section#paperspage.page-section
             .container.px-4.px-lg-5
                 h2.text-center.mt-0 
                     .bi.bi-journal-check &nbsp; Papers

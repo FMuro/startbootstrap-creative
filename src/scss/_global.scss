@@ -60,3 +60,14 @@ a {
     color: $white !important;
     transform: scale(1.5);
     }
+
+
+    [data-bs-theme="dark"] {
+        --bs-primary: #{blue};
+        --bs-primary-bg-subtle: #{$primary};
+        --bs-primary-bg-subtle-dark: #{$primary};
+        
+        .btn-primary {
+          --bs-btn-bg: #{$primary};
+        }
+      }

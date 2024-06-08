@@ -79,7 +79,7 @@ html(lang='en')
                 {% if entry.type == '' and (entry.issued['date-parts'][0][0] | int) > 2020%}
                 {% if entry.type == '' %}
                     {% filter indent(width=20) %}
-                    {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.number, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url']) }}
+                    {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.issue, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url']) }}
                     {% endfilter -%}
                 {% endif -%}
                 {% endif -%}

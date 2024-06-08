@@ -87,7 +87,7 @@ html(lang='en')
                 {% endif %}
                 {% if entry.type != '' %}
                     {% filter indent(width=20) %}
-                    {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.number, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url'], pdf) }}
+                    {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.issue, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url'], pdf) }}
                     {% endfilter -%}
                 {% endif -%}
                 {% endfor %}

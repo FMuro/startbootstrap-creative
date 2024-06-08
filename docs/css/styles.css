@@ -12187,7 +12187,7 @@ hr.divider-light {
 #mainNav .navbar-nav li > ul.dropdown-menu {
   display: block;
   padding-left: 2rem;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--bs-text-primary);
   border-color: transparent;
 }
 @media (min-width: 992px) {
@@ -12284,7 +12284,7 @@ hr.divider-light {
 #secondaryNav .navbar-nav li > ul.dropdown-menu {
   display: block;
   padding-left: 2rem;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--bs-text-primary);
   border-color: transparent;
 }
 @media (min-width: 992px) {

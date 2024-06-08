@@ -81,8 +81,7 @@ html(lang='en')
                         p.mb-5
                         {% for network in social %}
                             a.ai.{{ network.icon }}.ai-2x.mx-2.professional-icons(href="{{ network.link }}", 
-                            data-bs-placement="top",
-                            data-bs-title="{{ network.name }}",
+                            title="{{ network.name }}",
                             aria-label="{{ network.name }}")
                         {% endfor %}
                         a.btn.btn-primary.btn-xl(href='#research') Find Out More

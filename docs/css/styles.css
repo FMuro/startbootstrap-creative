@@ -12087,12 +12087,7 @@ body {
 }
 
 .page-section {
-  padding: 5rem 0;
-}
-@media (min-width: 768px) {
-  .page-section {
-    padding: 6rem 0;
-  }
+  padding: 6rem 0;
 }
 @media (min-width: 992px) {
   .page-section {
@@ -12135,15 +12130,6 @@ a:hover {
 .professional-icons:hover {
   color: #fff !important;
   transform: scale(1.5);
-}
-
-[data-bs-theme=dark] {
-  --bs-primary: blue;
-  --bs-primary-bg-subtle: #f4623a;
-  --bs-primary-bg-subtle-dark: #f4623a;
-}
-[data-bs-theme=dark] .btn-primary {
-  --bs-btn-bg: #f4623a;
 }
 
 .btn-xl {

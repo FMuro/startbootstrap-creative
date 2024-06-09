@@ -19,10 +19,7 @@ body {
 
 //- Page section styling
 .page-section {
-    padding: 5rem 0;
-    @include media-breakpoint-up(md) {
-        padding: 6rem 0;
-    }
+    padding: 6rem 0;
     @include media-breakpoint-up(lg) {
         padding: 8rem 0;
     }
@@ -66,14 +63,3 @@ a {
     color: $white !important;
     transform: scale(1.5);
     }
-
-
-    [data-bs-theme="dark"] {
-        --bs-primary: #{blue};
-        --bs-primary-bg-subtle: #{$primary};
-        --bs-primary-bg-subtle-dark: #{$primary};
-        
-        .btn-primary {
-          --bs-btn-bg: #{$primary};
-        }
-      }

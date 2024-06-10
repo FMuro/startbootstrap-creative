@@ -27,7 +27,7 @@ preprints_template = ENV.get_template('src/pug/preprints.j2')
 
 # Opening the data file
 with open("src/assets/bib/output.yml") as y:
-    with open("src/assets/bib/open.yml") as z:
+    with open("src/data.yml") as z:
         # Loading the YAML data
         input = yaml.load(y, Loader=yaml.BaseLoader)
         extras = yaml.load(z, Loader=yaml.BaseLoader)

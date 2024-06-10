@@ -11,6 +11,11 @@ h3.mt-5.mb-3.text-center
     .bi.bi-journal &nbsp; Preprints
 .row.row-cols-1.gx-5.gy-4.mb-4
 {% endif -%}
+    {% for name in entry.author %}
+    {% if name.family in extras.coauthors.keys() %}
+    {% do name.update({'url': extras.coauthors[name.family]}) %}
+    {% endif %}
+    {% endfor %}
     {% filter indent(width=4) %}
     {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.issue, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url']) }}
     {% endfilter -%}
@@ -29,15 +34,20 @@ h3.mt-5.mb-3.text-center
 {% set count = {'counter': 0} %}
 {% for entry in input %}
 {% if entry.type != '' %}
-{% if entry.id in extras.keys() %}
-{% if extras[entry.id] == ''%}
+{% if entry.id in extras.open.keys() %}
+{% if extras.open[entry.id] == ''%}
 {% set pdf = ('a.btn.btn-xs(href="assets/files/papers/' ~ entry.id ~ '.pdf") PDF') %}
 {% else %}
-{% set pdf = ('a.btn.btn-xs(href="' ~ extras[entry.id] ~ '") PDF') %}
+{% set pdf = ('a.btn.btn-xs(href="' ~ extras.open[entry.id] ~ '") PDF') %}
 {% endif %}
 {% else %}
 {% set pdf = '' %}
 {% endif %}
+{% for name in entry.author %}
+{% if name.family in extras.coauthors.keys() %}
+{% do name.update({'url': extras.coauthors[name.family]}) %}
+{% endif %}
+{% endfor %}
 {% if count.counter < maximum %}
     {% filter indent(width=4) %}
     {{ paper(entry.id, entry.author, entry.title, entry.issued['date-parts'][0][0], entry.type, entry['container-title'], entry.volume, entry.issue, entry.series, entry.page, entry.note, entry.DOI, entry.arxiv, entry.abstract, entry.bibtex, entry['zbmath_url'], pdf) }}

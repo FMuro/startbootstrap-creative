@@ -63,3 +63,13 @@ a {
     color: $white !important;
     transform: scale(1.5);
     }
+
+a.coauthor {
+    color: var(--bs-text);
+    border-bottom: 1.5px dashed $primary;
+}
+
+a.coauthor:hover {
+    color: #cf5331;
+    border-bottom: 1.5px dashed #cf5331;
+}

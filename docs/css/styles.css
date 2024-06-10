@@ -12132,6 +12132,16 @@ a:hover {
   transform: scale(1.5);
 }
 
+a.coauthor {
+  color: var(--bs-text);
+  border-bottom: 1.5px dashed #f4623a;
+}
+
+a.coauthor:hover {
+  color: #cf5331;
+  border-bottom: 1.5px dashed #cf5331;
+}
+
 .btn-xl {
   padding: 0.75rem 1.35rem;
   font-size: 0.85rem;

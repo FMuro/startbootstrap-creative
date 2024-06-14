@@ -26,7 +26,7 @@ papers_template = ENV.get_template('src/pug/papers.j2')
 preprints_template = ENV.get_template('src/pug/preprints.j2')
 
 # Opening the data file
-with open("src/assets/bib/output.yml") as y:
+with open("output.yml") as y:
     with open("src/data.yml") as z:
         # Loading the YAML data
         input = yaml.load(y, Loader=yaml.BaseLoader)

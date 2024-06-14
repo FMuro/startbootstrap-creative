@@ -1,0 +1,3 @@
+[submodule "bibliographer"]
+	path = bibliographer
+	url = git@github.com:FMuro/bibliographer.git

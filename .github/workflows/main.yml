@@ -20,7 +20,7 @@ jobs:
           pip install -r requirements.txt    
       - name: get bibtex
         run:
-          python bibliographer-github.py
+          python bibliographer-github-1.py
       - name: convert bibtex to CSL JSON
         uses: docker://pandoc/core:3.2
         with:

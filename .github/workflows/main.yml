@@ -5,11 +5,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: checkout repo content
-        uses: actions/checkout@v3 # checkout the repository content
+        uses: actions/checkout@v4 # checkout the repository content
         with:
           submodules: true
       - name: setup python
@@ -67,6 +67,8 @@ jobs:
           
 # Deployment job to GutHub Pages
   deploy:
+    permissions:
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

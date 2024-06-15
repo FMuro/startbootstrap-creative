@@ -6,10 +6,11 @@ from jinja2 import Environment, FileSystemLoader  # Jinja template
 # Folder with data and templates and do extension
 ENV = Environment(loader=FileSystemLoader('.'), extensions=['jinja2.ext.do'])
 
-web_template = ENV.get_template('src/pug/index.j2')
+
+web_template = ENV.get_template('src/pug/index.j2') # landing page
 
 # Opening the data file
-with open("src/data.yml") as y:
+with open("data.yml") as y:
     # Loading the YAML data
     input = yaml.load(y, Loader=yaml.BaseLoader)
     # Opening the output file
@@ -21,13 +22,14 @@ with open("src/data.yml") as y:
     # Closing the output file
     f.close
 
-publications_template = ENV.get_template('src/subfiles/publications.j2')
-papers_template = ENV.get_template('src/pug/papers.j2')
-preprints_template = ENV.get_template('src/pug/preprints.j2')
+    
+publications_template = ENV.get_template('src/subfiles/publications.j2') # preprints and papers in landing page
+papers_template = ENV.get_template('src/pug/papers.j2') # papers page
+preprints_template = ENV.get_template('src/pug/preprints.j2') # preprints page
 
 # Opening the data file
 with open("output.yml") as y:
-    with open("src/data.yml") as z:
+    with open("data.yml") as z:
         # Loading the YAML data
         input = yaml.load(y, Loader=yaml.BaseLoader)
         extras = yaml.load(z, Loader=yaml.BaseLoader)
@@ -48,12 +50,12 @@ with open("output.yml") as y:
         g.close
         h.close
 
-presentations_max_template = ENV.get_template('src/subfiles/presentations_max.j2')
-
-presentations_template = ENV.get_template('src/pug/presentations.j2')
+        
+presentations_max_template = ENV.get_template('src/subfiles/presentations_max.j2') # presentations in landing page
+presentations_template = ENV.get_template('src/pug/presentations.j2') # presentations page
 
 # Opening the data file
-with open("src/assets/bib/presentations.yml") as y:
+with open("presentations.yml") as y:
     # Loading the YAML data
     input = yaml.load(y, Loader=yaml.BaseLoader)
     # Opening the output file

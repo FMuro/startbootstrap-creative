@@ -55,7 +55,7 @@ presentations_max_template = ENV.get_template('src/subfiles/presentations_max.j2
 presentations_template = ENV.get_template('src/pug/presentations.j2') # presentations page
 
 # Opening the data file
-with open("presentations.yml") as y:
+with open("data.yml") as y:
     # Loading the YAML data
     input = yaml.load(y, Loader=yaml.BaseLoader)
     # Opening the output file

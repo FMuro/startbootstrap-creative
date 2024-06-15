@@ -3,7 +3,7 @@
 {% set maximum = 2 %}
 
 {% set count = {'counter': 0} %}
-{% for entry in input %}
+{% for entry in biblio %}
 {% if entry.type == '' and (entry.issued['date-parts'][0][0] | int) > 2020%}
 {% if count.counter < maximum %}
 {% if count.counter == 0 %}
@@ -12,8 +12,8 @@ h3.mt-5.mb-3.text-center
 .row.row-cols-1.gx-5.gy-4.mb-4
 {% endif -%}
     {% for name in entry.author %}
-    {% if name.family in extras.coauthors.keys() %}
-    {% do name.update({'url': extras.coauthors[name.family]}) %}
+    {% if name.family in datos.coauthors.keys() %}
+    {% do name.update({'url': datos.coauthors[name.family]}) %}
     {% endif %}
     {% endfor %}
     {% filter indent(width=4) %}
@@ -32,20 +32,20 @@ h3.mt-5.mb-3.text-center
     .bi.bi-journal-check &nbsp; Papers
 .row.row-cols-1.gx-5.gy-4.mb-4
 {% set count = {'counter': 0} %}
-{% for entry in input %}
+{% for entry in biblio %}
 {% if entry.type != '' %}
-{% if entry.id in extras.open.keys() %}
-{% if extras.open[entry.id] == ''%}
+{% if entry.id in datos.open.keys() %}
+{% if datos.open[entry.id] == ''%}
 {% set pdf = ('a.btn.btn-xs(href="assets/files/papers/' ~ entry.id ~ '.pdf") PDF') %}
 {% else %}
-{% set pdf = ('a.btn.btn-xs(href="' ~ extras.open[entry.id] ~ '") PDF') %}
+{% set pdf = ('a.btn.btn-xs(href="' ~ datos.open[entry.id] ~ '") PDF') %}
 {% endif %}
 {% else %}
 {% set pdf = '' %}
 {% endif %}
 {% for name in entry.author %}
-{% if name.family in extras.coauthors.keys() %}
-{% do name.update({'url': extras.coauthors[name.family]}) %}
+{% if name.family in datos.coauthors.keys() %}
+{% do name.update({'url': datos.coauthors[name.family]}) %}
 {% endif %}
 {% endfor %}
 {% if count.counter < maximum %}

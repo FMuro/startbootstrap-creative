@@ -148,7 +148,7 @@
   event: Triangulated Categories and Applications
   url: http://www.birs.ca/events/2016/5-day-workshops/16w5040
   daymonth: 19-24 June
-  title: Triangulated derivators and their K-theory
+  title: Triangulated derivators and their $K$-theory
   video: http://www.birs.ca/events/2016/5-day-workshops/16w5040/videos/watch/201606201032-Muro.html
   year: 2016
 
@@ -181,11 +181,11 @@
 
 - location: Stuttgart, Germany
   type: conference
-  event: Workshop on t-structures and related topics
+  event: Workshop on $t$-structures and related topics
   url: http://www.iaz.uni-stuttgart.de/LstAGeoAlg/activities/t-work.t
   daymonth: 7-9 July
   file: stuttgart
-  title: K-theory and t-structures
+  title: $K$-theory and $t$-structures
   year: 2011
 
 - location: Banff, Canada
@@ -258,7 +258,7 @@
   url: http://www.irb.hr/korisnici/zskoda/catconf.html
   daymonth: 24-28 September
   file: splitbeamer
-  title: Picard groupoids, determinant functors and K-theory
+  title: Picard groupoids, determinant functors and $K$-theory
   year: 2007
 
 - location: Bellaterra, Spain
@@ -275,16 +275,16 @@
   url: http://reh.math.uni-duesseldorf.de/%7Einternet/NRWTopology/
   daymonth: 24-25 November
   file: nrwdus
-  title: The 1-type of Waldhausen K-theory
+  title: The 1-type of Waldhausen $K$-theory
   year: 2006
 
 - location: Valladolid, Spain
   type: conference
-  event: VASBI ICM Satellite Conference on K-theory and Noncommutative Geometry
+  event: VASBI ICM Satellite Conference on $K$-theory and Noncommutative Geometry
   url: http://mate.dm.uba.ar/%7Egcorti/VASBI.htm
   daymonth: 31 August-6 September
   file: vasbi
-  title: One the 1-type of Waldhausen K-theory
+  title: One the 1-type of Waldhausen $K$-theory
   year: 2006
 
 - location: Madrid, Spain
@@ -292,7 +292,7 @@
   event: International Congress of Mathematicians 2006
   daymonth: 22-30 August
   file: 2-Muro-1403
-  title: The 1-type of a Waldhausen K-theory spectrum
+  title: The 1-type of a Waldhausen $K$-theory spectrum
   year: 2006
 
 - location: Leeds, UK

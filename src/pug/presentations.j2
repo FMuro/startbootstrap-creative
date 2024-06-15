@@ -86,7 +86,7 @@ html(lang='en')
                     .bi.bi-easel &nbsp; Presentations
                 hr.divider
                 .row.row-cols-1.gx-5.gy-4.mb-4
-                {% for entry in input.presentations %}
+                {% for entry in datos.presentations %}
                 {% filter indent(width=20) %}
                     {{ presentation(entry.title, entry.event, entry.note, entry.daymonth, entry.year, entry.location, entry.file, entry.video, entry.url) }}
                 {% endfilter %}

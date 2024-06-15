@@ -86,12 +86,12 @@ html(lang='en')
                     .bi.bi-journal &nbsp; Preprints
                 hr.divider
                 .row.row-cols-1.gx-5.gy-4.mb-4
-                {% for entry in input %}
+                {% for entry in biblio %}
                 {% if entry.type == '' and (entry.issued['date-parts'][0][0] | int) > 2020%}
                 {% if entry.type == '' %}
                     {% for name in entry.author %}
-                    {% if name.family in extras.coauthors.keys() %}
-                    {% do name.update({'url': extras.coauthors[name.family]}) %}
+                    {% if name.family in datos.coauthors.keys() %}
+                    {% do name.update({'url': datos.coauthors[name.family]}) %}
                     {% endif %}
                     {% endfor %}
                     {% filter indent(width=20) %}

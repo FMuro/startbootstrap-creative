@@ -89,7 +89,7 @@ html(lang='en')
                         p.text-white-75.mb-5
                             | Welcome to my website! I'm a professor of mathematics at the University of Seville. Here, you'll mostly find information about my research.
                         p.mb-5
-                        {% for network in social %}
+                        {% for network in datos.social %}
                             a.ai.{{ network.icon }}.ai-3x.mx-2.professional-icons(href="{{ network.link }}", 
                             title="{{ network.name }}",
                             aria-label="{{ network.name }}")
@@ -120,7 +120,7 @@ html(lang='en')
         #portfolio.bg-dark
             .container-fluid.p-0
                 .row.g-0
-                    {% for event in portfolio %}
+                    {% for event in datos.portfolio %}
                     .col-lg-4.col-sm-6
                         a.portfolio-box(href='assets/img/portfolio/fullsize/{{ event.image }}.webp', width='1300', height='700', title='{{ event.name }}')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/{{ event.image }}.webp', width='650', height='350', alt='...')

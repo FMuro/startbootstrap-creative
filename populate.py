@@ -7,66 +7,47 @@ from jinja2 import Environment, FileSystemLoader  # Jinja template
 ENV = Environment(loader=FileSystemLoader('.'), extensions=['jinja2.ext.do'])
 
 
+# jinja2 templates
+
 web_template = ENV.get_template('src/pug/index.j2') # landing page
-
-# Opening the data file
-with open("data.yml") as y:
-    # Loading the YAML data
-    input = yaml.load(y, Loader=yaml.BaseLoader)
-    # Opening the output file
-    f = open('src/pug/index.pug', 'w', encoding="utf8")
-    # Rendering the output from data and web template
-    output = web_template.render(input)
-    # Creating the output file
-    f.write(output)
-    # Closing the output file
-    f.close
-
-    
+presentations_max_template = ENV.get_template('src/subfiles/presentations_max.j2') # presentations in landing page
+presentations_template = ENV.get_template('src/pug/presentations.j2') # presentations page
 publications_template = ENV.get_template('src/subfiles/publications.j2') # preprints and papers in landing page
 papers_template = ENV.get_template('src/pug/papers.j2') # papers page
 preprints_template = ENV.get_template('src/pug/preprints.j2') # preprints page
 
-# Opening the data file
+
+# Opening the data files
 with open("output.yml") as y:
     with open("data.yml") as z:
         # Loading the YAML data
-        input = yaml.load(y, Loader=yaml.BaseLoader)
-        extras = yaml.load(z, Loader=yaml.BaseLoader)
-        # Opening the output file
-        f = open('src/subfiles/publications.pug', 'w', encoding="utf8")
-        g = open('src/pug/papers.pug', 'w', encoding="utf8")
-        h = open('src/pug/preprints.pug', 'w', encoding="utf8")
-        # Rendering the output from data and papers template
-        publications_output = publications_template.render(input=input, extras=extras)
-        papers_output = papers_template.render(input=input, extras=extras)
-        preprints_output = preprints_template.render(input=input, extras=extras)
-        # Creating the output file
-        f.write(publications_output)
-        g.write(papers_output)
-        h.write(preprints_output)
-        # Closing the output file
+        biblio = yaml.load(y, Loader=yaml.BaseLoader)
+        datos = yaml.load(z, Loader=yaml.BaseLoader)
+        # Opening the output files
+        f = open('src/pug/index.pug', 'w', encoding="utf8")
+        f2 = open('src/subfiles/presentations_max.pug', 'w', encoding="utf8")
+        g2 = open('src/pug/presentations.pug', 'w', encoding="utf8")
+        f3 = open('src/subfiles/publications.pug', 'w', encoding="utf8")
+        g3 = open('src/pug/papers.pug', 'w', encoding="utf8")
+        h3 = open('src/pug/preprints.pug', 'w', encoding="utf8")
+        # Rendering the output files from data, biblio and jinja2 templates
+        output = web_template.render(datos=datos)
+        presentations_max_output = presentations_max_template.render(datos=datos)
+        presentations_output = presentations_template.render(datos=datos)
+        publications_output = publications_template.render(biblio=biblio, datos=datos)
+        papers_output = papers_template.render(biblio=biblio, datos=datos)
+        preprints_output = preprints_template.render(biblio=biblio, datos=datos)
+        # Writing to the output files
+        f.write(output)
+        f2.write(presentations_max_output)
+        g2.write(presentations_output)
+        f3.write(publications_output)
+        g3.write(papers_output)
+        h3.write(preprints_output)
+        # Closing the output files
         f.close
-        g.close
-        h.close
-
-        
-presentations_max_template = ENV.get_template('src/subfiles/presentations_max.j2') # presentations in landing page
-presentations_template = ENV.get_template('src/pug/presentations.j2') # presentations page
-
-# Opening the data file
-with open("data.yml") as y:
-    # Loading the YAML data
-    input = yaml.load(y, Loader=yaml.BaseLoader)
-    # Opening the output file
-    f = open('src/subfiles/presentations_max.pug', 'w', encoding="utf8")
-    g = open('src/pug/presentations.pug', 'w', encoding="utf8")
-    # Rendering the output from data and presentations template
-    output_max = presentations_max_template.render(input=input)
-    output = presentations_template.render(input=input)
-    # Creating the output file
-    f.write(output_max)
-    g.write(output)
-    # Closing the output file
-    f.close
-    g.close
+        f2.close
+        g2.close
+        f3.close
+        g3.close
+        h3.close

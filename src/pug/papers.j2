@@ -86,12 +86,12 @@ html(lang='en')
                     .bi.bi-journal-check &nbsp; Papers
                 hr.divider
                 .row.row-cols-1.gx-5.gy-4.mb-4
-                {% for entry in input %}
-                {% if entry.id in extras.open.keys() %}
-                {% if extras.open[entry.id] == ''%}
+                {% for entry in biblio %}
+                {% if entry.id in datos.open.keys() %}
+                {% if datos.open[entry.id] == ''%}
                 {% set pdf = ('a.btn.btn-xs(href="assets/files/papers/' ~ entry.id ~ '.pdf") PDF') %}
                 {% else %}
-                {% set pdf = ('a.btn.btn-xs(href="' ~ extras.open[entry.id] ~ '") PDF') %}
+                {% set pdf = ('a.btn.btn-xs(href="' ~ datos.open[entry.id] ~ '") PDF') %}
                 {% endif %}
                 {% else %}
                 {% set pdf = '' %}
